@@ -14,9 +14,9 @@ of different databases. This does not include data import/export or data
 management.
 
 As datasets become larger and larger, it is impossible for people to
-save them in traditional format such as spreadsheet, raw text file,
-etc., which could not fit on devices with limited storage and could not
-be easily shared and distributed across collaborators. Instead, people
+save them in traditional file formats such as spreadsheet, raw text
+file, etc., which could not fit on devices with limited storage and
+could not be easily shared across collaborators. Instead, people
 nowadays tend to store data in databases for more scalable and reliable
 data management.
 
@@ -24,12 +24,17 @@ Database systems are often classified based on the [database
 models](https://en.wikipedia.org/wiki/Database_model) that they support.
 [Relational
 databases](https://en.wikipedia.org/wiki/Relational_database) became
-dominant in the 1980s. These model data as rows and columns in a series
-of tables with the use of [SQL](https://en.wikipedia.org/wiki/SQL) to
-express the logic for writing and querying data. Non-relational
-databases became popular in recent years due to huge demand in storing
-unstructured data with the use of
+dominant in the 1980s. The data in relational databases is modeled as
+rows and columns in a series of tables with the use of
+[SQL](https://en.wikipedia.org/wiki/SQL) to express the logic for
+writing and querying data. The tables are relational, e.g. you have a
+user who users your softwares and those softwares have creators and
+contributors. Non-relational databases became popular in recent years
+due to huge demand in storing unstructured data with the use of
 [NoSQL](https://en.wikipedia.org/wiki/NoSQL) as the query language.
+Users generally don't need to define the data schema up front. If there
+are changing requirements in the applications, non-relational databases
+can be much easier to use and manage.
 
 The content presented in this Task View are undergoing rapid changes in
 industries and academia. Please send any suggestions to the [task view
