@@ -1,0 +1,210 @@
+<CRANTaskView>
+
+   <name>ModelDeployment</name>
+   <topic>Model Deployment with R</topic>
+   <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
+   <version>2018-05-01</version>
+
+  <info>
+    <p>
+      This CRAN task view contains a list of packages, grouped by topic, that
+      provides functionalities to streamline the process of deploying models to various
+      environments, such as mobile devices, edge devices, cloud, and GPUs, for
+      scoring or inferencing on new data.
+    </p>
+
+    <p>
+      Model deployment is often challenging due to various reasons. Some example challenges are:
+    </p>
+
+    <ul>
+      <li>
+        It involves deploying models on heterogenous environments, e.g. edge devices,
+        mobile devices, GPUs, etc.
+      </li>
+      <li>
+        It is hard to compress the model to very small size that could fit on devices with limited storage while keeping the same precision and minimizing the overhead to load the model for inference.
+      </li>
+      <li>
+        Deployed models sometimes need to process new data records within limited memory on small devices.
+      </li>
+      <li>
+        Many deployment environments have bad network connectivity so sometimes cloud solutions may not
+        meet the requirements.
+      </li>
+      <li>
+        There's interest in stronger user data privacy paradigms where user data does not need to leave the mobile device.
+      </li>
+      <li>
+        There's growing demand to perform on-device model-based data filtering before collecting the data.
+      </li>
+
+    </ul>
+
+    <p>
+      Many of the areas discussed in this Task View are undergoing rapid
+      changes in industries and academia. Please send any suggestions to the
+      <a href="mailto:terrytangyuan@gmail.com">task view maintainer</a>
+      or submit a pull request or issue to the
+      <a href="https://github.com/terrytangyuan/ctv-model-deployment">
+        Github repository of this task view
+      </a>.
+    </p>
+
+    <p>
+      Suggestions and corrections by Achim Zeileis and Dirk Eddelbuettel (as well as others I may have forgotten to add here) are gratefully acknowledged.
+    </p>
+
+    <p><strong>Deployment through Different Types of Artifacts</strong></p>
+
+    <p>
+    This section includes packages that provides functionalities to export the trained
+model to an artifact that could fit in small devices such as mobile devices
+(e.g. Android, iOS) and edge devices (Rasberri Pi). These packages are built
+based on different model format.
+    </p>
+    <ul>
+      <li>
+        Predictive Model Markup Language (PMML) is an XML-based language which
+provides a way for applications to define statistical and data mining models
+and to share models between PMML compliant applications. The following packages
+are based on PMML:
+          <ul>
+            <li>The <pkg>pmml</pkg> package provides the main interface to PMML.</li>
+            <li>The <pkg>pmmlTransformations</pkg> package allows for data to be transformed before using it to
+      construct models. Builds structures to allow functions in the PMML package to
+      output transformation details in addition to the model in the resulting PMML file.
+            </li>
+            <li>The <pkg>rattle</pkg> package allows to load data from a CSV file (or via ODBC), transform and explore the data, build and evaluate models, and export models as PMML or as scores.
+            </li>
+            <li>The <pkg>arules</pkg> package provides the infrastructure for representing, manipulating and analyzing transaction data and patterns (frequent itemsets and association rules). The associations can be written to disk in PMML.</li>
+            <li>The <pkg>arulesSequences</pkg> package is an add-on for arules to handle and mine frequent sequences.</li>
+            <li>The <pkg>arulesCBA</pkg> package provides a function to build an association rule-based classifier for data frames, and to classify incoming data frames using such a classifier. </li>
+          </ul>
+      </li>
+      <li>
+        Plain Old Java Object (POJO) or a Model Object, Optimized (MOJO) are intended to
+be easily embeddable in any Java environment. The only compilation and runtime
+dependency for a generated model is a h2o-genmodel.jar file produced as the
+build output of these packages. The <pkg>h2o</pkg> package provides easy-to-use interface to
+build a wide range of machine learning models, such as GLM, DRF, and XGBoost models based on <pkg>xgboost</pkg> package, which can then be exported as MOJO and POJO format. The MOJO and POJO artifacts can then be loaded by its REST interface as well as different language bindings, e.g. Java, Scala, R, and Python.
+      </li>
+      <li>
+        Portable Format for Analytics (PFA) is a specification for event-based
+processors that perform predictive or analytic calculations and is aimed at
+helping smooth the transition from statistical model development to large-scale
+and/or online production. PFA combines the ease of portability across systems with algorithmic flexibility: models, pre-processing, and post-processing are all functions that can be arbitrarily composed, chained, or built into complex workflows. The <pkg>aurelius</pkg> package provides tools for converting R
+objects and syntax into the PFA format.
+      </li>
+      <li>
+        <a href="https://www.tensorflow.org/">TensorFlow</a>'s SavedModel as well as its optimized version <a href="https://www.tensorflow.org/mobile/tflite/">TensorFlow Lite</a>, which uses many techniques for achieving low latency such as optimizing the kernels for mobile apps, pre-fused activations, and quantized
+kernels that allow smaller and faster (fixed-point math) models. It enables
+on-device machine learning inference with low latency and small binary size.
+The packages listed below can produce models in this format. Note that these packages are R wrappers of their corresponding Python API based on the <pkg>reticulate</pkg> package. Though Python binary is required for creating the models, it's not required during inference time for deployment.
+        <ul>
+          <li>The <pkg>tensorflow</pkg> package provides full access to TensorFlow API for numerical computation using data flow graphs.</li>
+          <li>The <pkg>tfestimators</pkg> package provides high-level API to machine learning models as well as highly customized neural network architectures.</li>
+          <li>The <pkg>keras</pkg> package high-level API to construct different types of neural networks.</li>
+        </ul>
+      </li>
+      <li>
+        The <pkg>onnx</pkg> package provides the interface to <a href="https://onnx.ai/">Open Neural Network Exchange (ONNX)</a> which is a standard format for models built using different frameworks (e.g. TensorFlow, MXNet, PyTorch, CNTK, etc). It defines an extensible computation graph model, as well as definitions of built-in operators and standard data types. Models trained in one framework can be easily transferred to another framework for inference. This open source format enables the interoperability between different frameworks and streamlining the path from research to production will increase the speed of innovation in the AI community. Note that this package is based on the <pkg>reticulate</pkg> package to interface with the original Python API so Python binary is required for deployment.
+      </li>
+      <li>
+        The <pkg>mleap</pkg> package is a <pkg>sparklyr</pkg> extension that provides an interface to <a href="https://github.com/combust/mleap">MLeap</a>. MLeap is an open source library that enables the persistence of <a href="https://spark.apache.org/">Apache Spark</a> ML pipelines and subsequent deployment in any Java-enabled device or service. At runtime, in addition to the serialized model file, the dependencies are a Java Virtual Machine (JVM) and the MLeap Runtime, and a Spark cluster is not required.
+      </li>
+    </ul>
+
+    <p><strong>Deployment through Cloud/Server</strong></p>
+
+    <p>
+    Many deployment environments are based on cloud/server. The following packages
+provides functionalities to deploy models in those types of environments:
+    </p>
+
+    <ul>
+      <li>The <pkg>yhatr</pkg> package allows to deploy, maintain, and invoke models via the <a href="https://www.yhat.com">Yhat</a>
+REST API.</li>
+      <li>The <a href="https://github.com/rstudio/cloudml">cloudml</a> package provides functionality to easily deploy models to
+<a href="https://cloud.google.com/ml-engine/">Google Cloud ML Engine</a>.
+      </li>
+      <li>
+        The <a href="https://github.com/rstudio/tfdeploy">tfdeploy</a> package provides functions to run a local test server that supports the same REST API as CloudML and <a href="https://www.rstudio.com/products/connect/">RStudio Connect</a>.
+      </li>
+      <li>The <pkg>domino</pkg> package provides R interface to <a href="https://www.dominodatalab.com/">Domino</a> CLI, a service that makes it easy to run your code on scalable hardware, with integrated version control and collaboration features
+designed for analytical workflows.
+      </li>
+      <li>The <pkg>tidypredict</pkg> package provides functionalities to run predictions inside database. It's based on <pkg>dplyr</pkg> and <pkg>dbplyr</pkg> that could translate data manipulations written in R to database queries that can be used later to execute the data transformations and aggregations inside various types of databases.
+      </li>
+      <li>
+        The <pkg>ibmdbR</pkg> package allows many basic and complex R operations to be pushed down into the database, which removes the main memory boundary of R and allows to make full use of parallel processing in the underlying database.
+      </li>
+      <li>
+        The <pkg>sparklyr</pkg> package provides bindings to <a href="https://spark.apache.org/">Apache Spark</a>'s distributed machine learning library and allows to deploy the trained models to clusters. Additionally, the <pkg>rsparkling</pkg> package uses <pkg>sparklyr</pkg> for Spark job deployment while using <pkg>h2o</pkg> package for regular model building.
+      </li>
+      <li>The <pkg>AzureML</pkg> package contains functions and datasets to support <a href="https://azure.microsoft.com/en-us/overview/machine-learning/">Azure Machine Learning</a>. This allows you to interact with datasets, as well as publish and consume R functions as API services.</li>
+      <li>The <a href="https://docs.microsoft.com/en-us/machine-learning-server/r-reference/mrsdeploy/mrsdeploy-package">mrsdeploy</a> package provides functions for establishing a remote session in a console application and for publishing and managing a web service that is backed by the R code block or script you provided.</li>
+      <li>The <pkg>opencpu</pkg> package provides a server that exposes a simple but powerful HTTP API for RPC and data interchange with R. This provides a reliable and scalable foundation for statistical services or building R web applications.</li>
+      <li>Several general purpose server/client frameworks for R exist that could help
+deploy models in server based environments:
+        <ul>
+          <li>The <pkg>Rserve</pkg> and <pkg>RSclient</pkg> packages both provide server and client functionality for TCP/IP or local socket interfaces to enable access to R from many languages and systems. </li>
+          <li>The <pkg>httpuv</pkg> package provides a low-level socket and protocol support for handling HTTP
+    and WebSocket requests directly within R.</li>
+        </ul>
+      </li>
+      <li>Several packages offer functionality for turning R code into a web API:
+        <ul>
+          <li>The <pkg>jug</pkg> package is a simple API-builder web framework, built around <pkg>httpuv</pkg>.</li>
+          <li>The <pkg>FastRWeb</pkg> package provides some basic infrastructure for this. plumber allows you to create a REST API by decorating existing R source code.</li>
+          <li>The <pkg>plumber</pkg> package allows you to create a web API by merely decorating your existing R source code with special comments. </li>
+          <li>The <a href="https://github.com/dselivanov/RestRserve">RestRserve</a> package is a R web API framework for building high-performance microservices and app backends based on <pkg>Rserve</pkg>.</li>
+        </ul>
+      </li>
+
+    </ul>
+
+  </info>
+
+  <packagelist>
+    <pkg>aurelius</pkg>
+    <pkg>arules</pkg>
+    <pkg>arulesCBA</pkg>
+    <pkg>arulesSequences</pkg>
+    <pkg>AzureML</pkg>
+    <pkg>dbplyr</pkg>
+    <pkg>domino</pkg>
+    <pkg>dplyr</pkg>
+    <pkg>FastRWeb</pkg>
+    <pkg>h2o</pkg>
+    <pkg>httpuv</pkg>
+    <pkg>ibmdbR</pkg>
+    <pkg>jug</pkg>
+    <pkg>keras</pkg>
+    <pkg>mleap</pkg>
+    <pkg>onnx</pkg>
+    <pkg>opencpu</pkg>
+    <pkg>plumber</pkg>
+    <pkg>pmml</pkg>
+    <pkg>pmmlTransformations</pkg>
+    <pkg>rattle</pkg>
+    <pkg>reticulate</pkg>
+    <pkg>rsparkling</pkg>
+    <pkg>RSclient</pkg>
+    <pkg>Rserve</pkg>
+    <pkg>sparklyr</pkg>
+    <pkg>tensorflow</pkg>
+    <pkg>tfestimators</pkg>
+    <pkg>tidypredict</pkg>
+    <pkg>xgboost</pkg>
+    <pkg>yhatr</pkg>
+
+  </packagelist>
+
+  <links>
+    <view>HighPerformanceComputing</view>
+    <view>MachineLearning</view>
+    <a href="https://github.com/terrytangyuan/ctv-model-deployment">GitHub repository for this Task View</a>
+  </links>
+
+</CRANTaskView>
