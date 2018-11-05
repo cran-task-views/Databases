@@ -7,25 +7,19 @@
 
   <info>
     <p>
-      This CRAN task view contains a list of packages that
-      provide access to different databases.
+      This CRAN task view contains a list of packages related to accessibility of different databases. This does not include data import/export or data management.
     </p>
 
     <p>
-      Description for diffrent types of databases:
+      As datasets become larger and larger, it is impossible for people to save them in traditional format such as spreadsheet, raw text file, etc., which could not fit on devices with limited storage and could not be easily shared and distributed across collaborators. Instead, people nowadays tend to store data in databases for more scalable and reliable data management.
+    </p>
+    
+    <p>
+      Database systems are often classified based on the <a href="https://en.wikipedia.org/wiki/Database_model">database models</a> that they support. <a href="https://en.wikipedia.org/wiki/Relational_database">Relational databases</a> became dominant in the 1980s. These model data as rows and columns in a series of tables with the use of <a href="https://en.wikipedia.org/wiki/SQL">SQL</a> to express the logic for writing and querying data. Non-relational databases became popular in recent years due to huge demand in storing unstructured data with the use of <a href="https://en.wikipedia.org/wiki/NoSQL">NoSQL</a> as the query language.
     </p>
 
-    <ul>
-      <li>
-        Relational databases.
-      </li>
-      <li>
-        Non-relational databases.
-      </li>
-    </ul>
-
     <p>
-      Many of the areas discussed in this Task View are undergoing rapid
+      The content presented in this Task View are undergoing rapid
       changes in industries and academia. Please send any suggestions to the
       <a href="mailto:terrytangyuan@gmail.com">task view maintainer</a>
       or submit a pull request or issue to the
@@ -92,14 +86,14 @@
 
     <ul>
       <li>
-        Packages for <a href="https://redis.io/">Redis</a>:
+        Packages for <a href="https://redis.io/">Redis</a>, an open-source, in-memory data structure store that can be used as a database, cache and message broker:
         <ul>
           <li>The <pkg>RcppRedis</pkg> package provides interface to Redis using the <a href="https://github.com/redis/hiredis">hiredis library</a>.</li>
           <li>The <pkg>redux</pkg> package provides a low-level interface to Redis, allowing execution of arbitrary Redis commands with almost no interface.</li>
         </ul>
       </li>
       <li>
-        Packages for <a href="http://elasticsearch.org/">Elasticsearch</a>:
+        Packages for <a href="http://elasticsearch.org/">Elasticsearch</a>, an open-source, RESTful, distributed search and analytics engine:
         <ul>
           <li>The <pkg>elastic</pkg> package provides a general purpose interface to Elasticsearch.</li>
           <li>The <pkg>uptasticsearch</pkg> package is a Elasticsearch client tailored to data science workflows.
@@ -150,6 +144,7 @@
   </packagelist>
 
   <links>
+    <view>ModelDeployment</view>
     <view>HighPerformanceComputing</view>
     <a href="https://github.com/terrytangyuan/ctv-databases">GitHub repository for this Task View</a>
   </links>

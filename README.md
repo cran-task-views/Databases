@@ -9,18 +9,32 @@
 
 <div>
 
-This CRAN task view contains a list of packages that provide access to
-different databases.
+This CRAN task view contains a list of packages related to accessibility
+of different databases. This does not include data import/export or data
+management.
 
-Description for diffrent types of databases:
+As datasets become larger and larger, it is impossible for people to
+save them in traditional format such as spreadsheet, raw text file,
+etc., which could not fit on devices with limited storage and could not
+be easily shared and distributed across collaborators. Instead, people
+nowadays tend to store data in databases for more scalable and reliable
+data management.
 
-  - Relational databases.
-  - Non-relational databases.
+Database systems are often classified based on the [database
+models](https://en.wikipedia.org/wiki/Database_model) that they support.
+[Relational
+databases](https://en.wikipedia.org/wiki/Relational_database) became
+dominant in the 1980s. These model data as rows and columns in a series
+of tables with the use of [SQL](https://en.wikipedia.org/wiki/SQL) to
+express the logic for writing and querying data. Non-relational
+databases became popular in recent years due to huge demand in storing
+unstructured data with the use of
+[NoSQL](https://en.wikipedia.org/wiki/NoSQL) as the query language.
 
-Many of the areas discussed in this Task View are undergoing rapid
-changes in industries and academia. Please send any suggestions to the
-[task view maintainer](mailto:terrytangyuan@gmail.com) or submit a pull
-request or issue to the [Github repository of this task
+The content presented in this Task View are undergoing rapid changes in
+industries and academia. Please send any suggestions to the [task view
+maintainer](mailto:terrytangyuan@gmail.com) or submit a pull request or
+issue to the [Github repository of this task
 view](https://github.com/terrytangyuan/ctv-databases) .
 
 **Relational Databases**
@@ -83,14 +97,17 @@ databases within R.
 This section includes packages that provides access to non-relational
 databases within R.
 
-  - Packages for [Redis](https://redis.io/) :
+  - Packages for [Redis](https://redis.io/) , an open-source, in-memory
+    data structure store that can be used as a database, cache and
+    message broker:
       - The [RcppRedis](https://cran.r-project.org/package=RcppRedis) package
         provides interface to Redis using the [hiredis
         library](https://github.com/redis/hiredis) .
       - The [redux](https://cran.r-project.org/package=redux) package provides a
         low-level interface to Redis, allowing execution of arbitrary
         Redis commands with almost no interface.
-  - Packages for [Elasticsearch](http://elasticsearch.org/) :
+  - Packages for [Elasticsearch](http://elasticsearch.org/) , an
+    open-source, RESTful, distributed search and analytics engine:
       - The [elastic](https://cran.r-project.org/package=elastic) package provides a
         general purpose interface to Elasticsearch.
       - The [uptasticsearch](https://cran.r-project.org/package=uptasticsearch)
@@ -144,6 +161,7 @@ databases within R.
 
 ### Related links:
 
+  - CRAN Task View: [ModelDeployment](ModelDeployment.html)
   - CRAN Task View:
     [HighPerformanceComputing](HighPerformanceComputing.html)
   - [GitHub repository for this Task
