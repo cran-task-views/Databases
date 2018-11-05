@@ -41,10 +41,16 @@
     </p>
     <ul>
       <li>
-        The <pkg>RMariaDB</pkg> package provides the interface to <a href="https://www.mysql.com/">SQLite</a>.
+        The <pkg>RMariaDB</pkg> package provides the interface to <a href="https://mariadb.org/">MariaDB</a> and <a href="https://www.mysql.com/">MySQL</a>.
       </li>
       <li>
-        The <pkg>RPostgreSQL</pkg> package provides the interface to <a href="https://www.postgresql.org/">PostgreSQL</a>.
+        The <pkg>RMySQL</pkg> package provides the interface to MySQL.
+      </li>
+      <li>
+        The <pkg>RPostgreSQL</pkg> package provides the interface to <a href="https://www.postgresql.org/">PostgreSQL</a>. There's also PostGIS <pkg>rpostgis</pkg> package which provides interface to its spatial extension <a href="http://postgis.net/">PostGIS</a>.
+      </li>
+      <li>
+        The <pkg>ROracle</pkg> package is a DBI-compliant <a href="https://www.oracle.com/database/index.html">Oracle database</a> driver based on the OCI.
       </li>
       <li>
         The <pkg>RSQLite</pkg> package provides the interface to <a href="http://www.sqlite.org/">SQLite</a>.
@@ -53,10 +59,16 @@
         The <pkg>bigrquery</pkg> package provides the interface to <a href="https://developers.google.com/bigquery/">Google BigQuery</a>.
       </li>
       <li>
-        The <pkg>MonetDBLite</pkg> package provides the interface to <a href="https://www.monetdb.org/Home">MonetDB</a>.
+        <pkg>MonetDBLite</pkg> and <pkg>MonetDB.R</pkg> packages provide the interface to <a href="https://www.monetdb.org/Home">MonetDB</a>.
       </li>
       <li>
         The <a href="https://github.com/druid-io/RDruid">RDruid</a> package provides the interface to <a href="http://druid.io/">Apache Druid</a>, a high performance analytics data store for event-driven data.
+      </li>
+      <li>
+        The <pkg>RH2</pkg> package provides the interface to <a href="http://www.h2database.com/">H2 Database Engine</a>, the Java SQL database.
+      </li>
+      <li>
+        The <pkg>influxdbr</pkg> package provides the interface to <a href="https://docs.influxdata.com/influxdb">InfluxDB</a>, a time series database designed to handle high write and query loads.
       </li>
     </ul>
 
@@ -103,13 +115,19 @@
   <packagelist>
     <pkg>bigrquery</pkg>
     <pkg>elastic</pkg>
+    <pkg>influxdbr</pkg>
     <pkg>RCassandra</pkg>
     <pkg>RcppRedis</pkg>
     <pkg>RPostgreSQL</pkg>
+    <pkg>rpostgis</pkg>
     <pkg>RSQLite</pkg>
+    <pkg>RMySQL</pkg>
     <pkg>RMariaDB</pkg>
+    <pkg>ROracle</pkg>
+    <pkg>RH2</pkg>
     <pkg>R4CouchDB</pkg>
     <pkg>MonetDBLite</pkg>
+    <pkg>MonetDB.R</pkg>
     <pkg>mongolite</pkg>
     <pkg>redux</pkg>
     <pkg>uptasticsearch</pkg>
