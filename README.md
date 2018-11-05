@@ -40,6 +40,9 @@ databases within R.
     BigQuery](https://developers.google.com/bigquery/) .
   - The [MonetDBLite](https://cran.r-project.org/package=MonetDBLite) package
     provides the interface to [MonetDB](https://www.monetdb.org/Home) .
+  - The [RDruid](https://github.com/druid-io/RDruid) package provides
+    the interface to [Apache Druid](http://druid.io/) , a high
+    performance analytics data store for event-driven data.
 
 **Non-relational Databases**
 
@@ -59,6 +62,24 @@ databases within R.
       - The [uptasticsearch](https://cran.r-project.org/package=uptasticsearch)
         package is a Elasticsearch client tailored to data science
         workflows.
+  - The [mongolite](https://cran.r-project.org/package=mongolite) package provides a
+    high-level, high-performance [MongoDB](https://www.mongodb.com/)
+    client based on
+    [libmongoc](https://github.com/mongodb/mongo-c-driver) , including
+    support for aggregation, indexing, map-reduce, streaming, SSL
+    encryption and SASL authentication.
+  - The [R4CouchDB](https://cran.r-project.org/package=R4CouchDB) package provides a
+    collection of functions for basic database and document management
+    operations in [CouchDB](http://couchdb.apache.org/) .
+  - The [RCassandra](https://cran.r-project.org/package=RCassandra) package provides
+    a direct interface (without the use of Java) to the most basic
+    functionality of [Apache Cassanda](http://cassandra.apache.org/)
+    such as login, updates and queries.
+  - The [aws.dynamodb](https://github.com/cloudyr/aws.dynamodb) package
+    provides access to [Amazon
+    DynamoDB](https://aws.amazon.com/dynamodb/) .
+  - The [rrocksdb](https://github.com/mrcsparker/rrocksdb) package
+    provides access to [RocksDB](http://rocksdb.org) .
 
 </div>
 
@@ -67,6 +88,9 @@ databases within R.
   - [bigrquery](https://cran.r-project.org/package=bigrquery)
   - [elastic](https://cran.r-project.org/package=elastic)
   - [MonetDBLite](https://cran.r-project.org/package=MonetDBLite)
+  - [mongolite](https://cran.r-project.org/package=mongolite)
+  - [R4CouchDB](https://cran.r-project.org/package=R4CouchDB)
+  - [RCassandra](https://cran.r-project.org/package=RCassandra)
   - [RcppRedis](https://cran.r-project.org/package=RcppRedis)
   - [redux](https://cran.r-project.org/package=redux)
   - [RMariaDB](https://cran.r-project.org/package=RMariaDB)

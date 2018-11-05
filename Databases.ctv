@@ -55,6 +55,9 @@
       <li>
         The <pkg>MonetDBLite</pkg> package provides the interface to <a href="https://www.monetdb.org/Home">MonetDB</a>.
       </li>
+      <li>
+        The <a href="https://github.com/druid-io/RDruid">RDruid</a> package provides the interface to <a href="http://druid.io/">Apache Druid</a>, a high performance analytics data store for event-driven data.
+      </li>
     </ul>
 
     <p><strong>Non-relational Databases</strong></p>
@@ -79,6 +82,20 @@
 </li>
         </ul>
       </li>
+      <li>The <pkg>mongolite</pkg> package provides a high-level, high-performance <a href="https://www.mongodb.com/">MongoDB</a> client based on <a href="https://github.com/mongodb/mongo-c-driver">libmongoc</a>, including support for aggregation, indexing, map-reduce, streaming, SSL encryption and SASL authentication.</li>
+      <li>
+        The <pkg>R4CouchDB</pkg> package provides a collection of functions for basic database and document management operations in <a href="http://couchdb.apache.org/">CouchDB</a>.
+      </li>
+      <li>
+        The <pkg>RCassandra</pkg> package provides a direct interface (without the use of Java) to the most basic functionality of <a href="http://cassandra.apache.org/">Apache Cassanda</a> such as login, updates and queries.
+      </li>
+      <li>
+        The <a href="https://github.com/cloudyr/aws.dynamodb">aws.dynamodb</a> package provides access to <a href="https://aws.amazon.com/dynamodb/">Amazon DynamoDB</a>.
+      </li>
+      <li>
+        The <a href="https://github.com/mrcsparker/rrocksdb">rrocksdb</a> package provides access to <a href="http://rocksdb.org">RocksDB</a>.
+      </li>
+
     </ul>
 
   </info>
@@ -86,11 +103,14 @@
   <packagelist>
     <pkg>bigrquery</pkg>
     <pkg>elastic</pkg>
+    <pkg>RCassandra</pkg>
     <pkg>RcppRedis</pkg>
     <pkg>RPostgreSQL</pkg>
     <pkg>RSQLite</pkg>
     <pkg>RMariaDB</pkg>
+    <pkg>R4CouchDB</pkg>
     <pkg>MonetDBLite</pkg>
+    <pkg>mongolite</pkg>
     <pkg>redux</pkg>
     <pkg>uptasticsearch</pkg>
   </packagelist>
