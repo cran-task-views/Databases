@@ -1,0 +1,103 @@
+<CRANTaskView>
+
+   <name>Databases</name>
+   <topic>Databases with R</topic>
+   <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
+   <version>2018-11-05</version>
+
+  <info>
+    <p>
+      This CRAN task view contains a list of packages that
+      provide access to different databases.
+    </p>
+
+    <p>
+      Description for diffrent types of databases:
+    </p>
+
+    <ul>
+      <li>
+        Relational databases.
+      </li>
+      <li>
+        Non-relational databases.
+      </li>
+    </ul>
+
+    <p>
+      Many of the areas discussed in this Task View are undergoing rapid
+      changes in industries and academia. Please send any suggestions to the
+      <a href="mailto:terrytangyuan@gmail.com">task view maintainer</a>
+      or submit a pull request or issue to the
+      <a href="https://github.com/terrytangyuan/ctv-databases">
+        Github repository of this task view
+      </a>.
+    </p>
+
+    <p><strong>Relational Databases</strong></p>
+
+    <p>
+    This section includes packages that provides access to relational databases within R.
+    </p>
+    <ul>
+      <li>
+        The <pkg>RMariaDB</pkg> package provides the interface to <a href="https://www.mysql.com/">SQLite</a>.
+      </li>
+      <li>
+        The <pkg>RPostgreSQL</pkg> package provides the interface to <a href="https://www.postgresql.org/">PostgreSQL</a>.
+      </li>
+      <li>
+        The <pkg>RSQLite</pkg> package provides the interface to <a href="http://www.sqlite.org/">SQLite</a>.
+      </li>
+      <li>
+        The <pkg>bigrquery</pkg> package provides the interface to <a href="https://developers.google.com/bigquery/">Google BigQuery</a>.
+      </li>
+      <li>
+        The <pkg>MonetDBLite</pkg> package provides the interface to <a href="https://www.monetdb.org/Home">MonetDB</a>.
+      </li>
+    </ul>
+
+    <p><strong>Non-relational Databases</strong></p>
+
+    <p>
+    This section includes packages that provides access to non-relational databases within R.
+    </p>
+
+    <ul>
+      <li>
+        Packages for <a href="https://redis.io/">Redis</a>:
+        <ul>
+          <li>The <pkg>RcppRedis</pkg> package provides interface to Redis using the <a href="https://github.com/redis/hiredis">hiredis library</a>.</li>
+          <li>The <pkg>redux</pkg> package provides a low-level interface to Redis, allowing execution of arbitrary Redis commands with almost no interface.</li>
+        </ul>
+      </li>
+      <li>
+        Packages for <a href="http://elasticsearch.org/">Elasticsearch</a>:
+        <ul>
+          <li>The <pkg>elastic</pkg> package provides a general purpose interface to Elasticsearch.</li>
+          <li>The <pkg>uptasticsearch</pkg> package is a Elasticsearch client tailored to data science workflows.
+</li>
+        </ul>
+      </li>
+    </ul>
+
+  </info>
+
+  <packagelist>
+    <pkg>bigrquery</pkg>
+    <pkg>elastic</pkg>
+    <pkg>RcppRedis</pkg>
+    <pkg>RPostgreSQL</pkg>
+    <pkg>RSQLite</pkg>
+    <pkg>RMariaDB</pkg>
+    <pkg>MonetDBLite</pkg>
+    <pkg>redux</pkg>
+    <pkg>uptasticsearch</pkg>
+  </packagelist>
+
+  <links>
+    <view>HighPerformanceComputing</view>
+    <a href="https://github.com/terrytangyuan/ctv-databases">GitHub repository for this Task View</a>
+  </links>
+
+</CRANTaskView>

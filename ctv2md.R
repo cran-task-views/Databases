@@ -1,10 +1,9 @@
-# Generate README.md from ModelDeployment.ctv
-# Borrowed Dirk Eddelbuettel's code from: https://github.com/eddelbuettel/ctv-hpc/blob/master/ctv2md.r
+# Generate README.md from Databases.ctv
 
 library(XML)
 library(ctv)
 
-ctv <- "ModelDeployment"
+ctv <- "Databases"
 ctvfile  <- paste0(ctv, ".ctv")
 htmlfile <- paste0(ctv, ".html")
 mdfile   <- "README.md"
