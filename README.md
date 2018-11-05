@@ -68,6 +68,15 @@ databases within R.
   - The [DBI](https://cran.r-project.org/package=DBI) package provides a database
     interface definition for communication between R and relational
     database management systems.
+  - The [RJDBC](https://cran.r-project.org/package=RJDBC) package is an
+    implementation of R's DBI interface using JDBC as a back-end. This
+    allows R to connect to any DBMS that has a JDBC driver.
+  - The [implyr](https://cran.r-project.org/package=implyr) package provides the
+    back-end for [Apache Impala](https://impala.apache.org) , which
+    enables low-latency SQL queries on data stored in the Hadoop
+    Distributed File System (HDFS), Apache HBase, Apache Kudu, Amazon
+    Simple Storage Service (S3), Microsoft Azure Data Lake Store (ADLS),
+    and Dell EMC Isilon.
 
 **Non-relational Databases**
 
@@ -113,6 +122,7 @@ databases within R.
   - [bigrquery](https://cran.r-project.org/package=bigrquery)
   - [DBI](https://cran.r-project.org/package=DBI)
   - [elastic](https://cran.r-project.org/package=elastic)
+  - [implyr](https://cran.r-project.org/package=implyr)
   - [influxdbr](https://cran.r-project.org/package=influxdbr)
   - [MonetDB.R](https://cran.r-project.org/package=MonetDB.R)
   - [MonetDBLite](https://cran.r-project.org/package=MonetDBLite)
@@ -123,6 +133,7 @@ databases within R.
   - [RcppRedis](https://cran.r-project.org/package=RcppRedis)
   - [redux](https://cran.r-project.org/package=redux)
   - [RH2](https://cran.r-project.org/package=RH2)
+  - [RJDBC](https://cran.r-project.org/package=RJDBC)
   - [RMariaDB](https://cran.r-project.org/package=RMariaDB)
   - [RMySQL](https://cran.r-project.org/package=RMySQL)
   - [ROracle](https://cran.r-project.org/package=ROracle)

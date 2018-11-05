@@ -76,6 +76,12 @@
       <li>
         The <pkg>DBI</pkg> package provides a database interface definition for communication between R and relational database management systems.
       </li>
+      <li>
+        The <pkg>RJDBC</pkg> package is an implementation of R's DBI interface using JDBC as a back-end. This allows R to connect to any DBMS that has a JDBC driver.
+      </li>
+      <li>
+        The <pkg>implyr</pkg> package provides the back-end for <a href="https://impala.apache.org">Apache Impala</a>, which enables low-latency SQL queries on data stored in the Hadoop Distributed File System (HDFS), Apache HBase, Apache Kudu, Amazon Simple Storage Service (S3), Microsoft Azure Data Lake Store (ADLS), and Dell EMC Isilon. 
+      </li>
     </ul>
 
     <p><strong>Non-relational Databases</strong></p>
@@ -122,6 +128,7 @@
     <pkg>bigrquery</pkg>
     <pkg>DBI</pkg>
     <pkg>elastic</pkg>
+    <pkg>implyr</pkg>
     <pkg>influxdbr</pkg>
     <pkg>odbc</pkg>
     <pkg>RCassandra</pkg>
@@ -134,6 +141,7 @@
     <pkg>ROracle</pkg>
     <pkg>RH2</pkg>
     <pkg>R4CouchDB</pkg>
+    <pkg>RJDBC</pkg>
     <pkg>MonetDBLite</pkg>
     <pkg>MonetDB.R</pkg>
     <pkg>mongolite</pkg>
