@@ -60,6 +60,14 @@ databases within R.
     the interface to [InfluxDB](https://docs.influxdata.com/influxdb) ,
     a time series database designed to handle high write and query
     loads.
+  - The [odbc](https://cran.r-project.org/package=odbc) package provides a
+    DBI-compliant interface to drivers of [Open Database Connectivity
+    (ODBC)](https://msdn.microsoft.com/en-us/library/ms710252\(v=vs.85\).aspx)
+    , which is a low-level, high-performance interface that is designed
+    specifically for relational data stores.
+  - The [DBI](https://cran.r-project.org/package=DBI) package provides a database
+    interface definition for communication between R and relational
+    database management systems.
 
 **Non-relational Databases**
 
@@ -103,11 +111,13 @@ databases within R.
 ### CRAN packages:
 
   - [bigrquery](https://cran.r-project.org/package=bigrquery)
+  - [DBI](https://cran.r-project.org/package=DBI)
   - [elastic](https://cran.r-project.org/package=elastic)
   - [influxdbr](https://cran.r-project.org/package=influxdbr)
   - [MonetDB.R](https://cran.r-project.org/package=MonetDB.R)
   - [MonetDBLite](https://cran.r-project.org/package=MonetDBLite)
   - [mongolite](https://cran.r-project.org/package=mongolite)
+  - [odbc](https://cran.r-project.org/package=odbc)
   - [R4CouchDB](https://cran.r-project.org/package=R4CouchDB)
   - [RCassandra](https://cran.r-project.org/package=RCassandra)
   - [RcppRedis](https://cran.r-project.org/package=RcppRedis)
