@@ -89,7 +89,7 @@
         Packages for <a href="https://redis.io/">Redis</a>, an open-source, in-memory data structure store that can be used as a database, cache and message broker:
         <ul>
           <li>The <pkg>RcppRedis</pkg> package provides interface to Redis using the <a href="https://github.com/redis/hiredis">hiredis library</a>.</li>
-          <li>The <pkg>redux</pkg> package provides a low-level interface to Redis, allowing execution of arbitrary Redis commands with almost no interface.</li>
+          <li>The <pkg>redux</pkg> package provides a low-level interface to Redis, allowing execution of arbitrary Redis commands with almost no interface, and a high-level generated interface to more than 200 redis commands.</li>
         </ul>
       </li>
       <li>
