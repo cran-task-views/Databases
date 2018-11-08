@@ -131,6 +131,35 @@
       </li>
 
     </ul>
+    
+    <p><strong>Databases Tools</strong></p>
+
+    <p>
+    This section includes packages that provides tools for working and testing with databases,  databases table manipulations, etc.
+    </p>
+    <ul>
+      <li>
+        The <pkg>pool</pkg> package enables the creation of object pools, which make it less computationally expensive to fetch a new object. 
+      </li>
+      <li>
+        The <pkg>DBItest</pkg> package is a helper that tests 'DBI' back ends for conformity to the interface.
+      </li>
+      <li>
+        The <pkg>dbfaker</pkg> package is to tool to ensure the validity of database writes. It provides a set of utilities to analyze and type check the properties of data frames that are to be written to databases with SQL support.
+      </li>
+      <li>
+        The <pkg>dbplyr</pkg> package is a dplyr back-end for databases that allows you to work with remote database tables as if they are in-memory data frames. Basic features works with any database that has a DBI back-end; more advanced features require SQL translation to be provided by the package author.
+      </li>
+      <li>
+        The <pkg>pivot</pkg> package extends the tidyverse packages dbplyr and <pkg>tidyr</pkg> functionality with pivot(), i.e. spread(), and unpivot(), i.e. gather(), for reshaping remote tables. Currently only 'Microsoft SQL Server' is supported.
+      </li>
+      <li>
+        The <pkg>sqldf</pkg> package provides functionalities to manipulate R Data Frames Using SQL.
+      </li>
+      <li>
+        The <pkg>pointblank</pkg> package provides provides tools to validate data tables in databases such as PostgreSQL and MySQL.
+      </li>
+    </ul>
 
   </info>
 

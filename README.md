@@ -162,6 +162,36 @@ databases within R.
   - The [rrocksdb](https://github.com/mrcsparker/rrocksdb) package
     provides access to [RocksDB](http://rocksdb.org) .
 
+**Databases Tools**
+
+This section includes packages that provides tools for working and
+testing with databases, databases table manipulations, etc.
+
+  - The [pool](https://cran.r-project.org/package=pool) package enables the creation
+    of object pools, which make it less computationally expensive to
+    fetch a new object.
+  - The [DBItest](https://cran.r-project.org/package=DBItest) package is a helper
+    that tests 'DBI' back ends for conformity to the interface.
+  - The [dbfaker](https://cran.r-project.org/package=dbfaker) package is to tool to
+    ensure the validity of database writes. It provides a set of
+    utilities to analyze and type check the properties of data frames
+    that are to be written to databases with SQL support.
+  - The [dbplyr](https://cran.r-project.org/package=dbplyr) package is a dplyr
+    back-end for databases that allows you to work with remote database
+    tables as if they are in-memory data frames. Basic features works
+    with any database that has a DBI back-end; more advanced features
+    require SQL translation to be provided by the package author.
+  - The [pivot](https://cran.r-project.org/package=pivot) package extends the
+    tidyverse packages dbplyr and [tidyr](https://cran.r-project.org/package=tidyr)
+    functionality with pivot(), i.e. spread(), and unpivot(), i.e.
+    gather(), for reshaping remote tables. Currently only 'Microsoft SQL
+    Server' is supported.
+  - The [sqldf](https://cran.r-project.org/package=sqldf) package provides
+    functionalities to manipulate R Data Frames Using SQL.
+  - The [pointblank](https://cran.r-project.org/package=pointblank) package provides
+    provides tools to validate data tables in databases such as
+    PostgreSQL and MySQL.
+
 </div>
 
 ### CRAN packages:
