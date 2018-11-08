@@ -110,7 +110,8 @@ databases within R.
         library](https://github.com/redis/hiredis) .
       - The [redux](https://cran.r-project.org/package=redux) package provides a
         low-level interface to Redis, allowing execution of arbitrary
-        Redis commands with almost no interface.
+        Redis commands with almost no interface, and a high-level
+        generated interface to more than 200 redis commands.
   - Packages for [Elasticsearch](http://elasticsearch.org/) , an
     open-source, RESTful, distributed search and analytics engine:
       - The [elastic](https://cran.r-project.org/package=elastic) package provides a
