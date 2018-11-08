@@ -35,10 +35,10 @@
     </p>
     <ul>
       <li>
-        The <pkg>RMariaDB</pkg> package provides the interface to <a href="https://mariadb.org/">MariaDB</a> and <a href="https://www.mysql.com/">MySQL</a>.
+        The <pkg>RMariaDB</pkg> package provides a DBI-compliant interface to <a href="https://mariadb.org/">MariaDB</a> and <a href="https://www.mysql.com/">MySQL</a>.
       </li>
       <li>
-        The <pkg>RMySQL</pkg> package provides the interface to MySQL.
+        The <pkg>RMySQL</pkg> package provides the interface to MySQL. Note that this is the legacy DBI interface to MySQL and MariaDB based on old code ported from S-PLUS. A modern MySQL client based on Rcpp is available from the RMariaDB package we listed above.
       </li>
       <li>
         Packages for <a href="https://www.postgresql.org/">PostgreSQL</a>:
@@ -78,7 +78,7 @@
         The <pkg>odbc</pkg> package provides a DBI-compliant interface to drivers of <a href="https://msdn.microsoft.com/en-us/library/ms710252(v=vs.85).aspx">Open Database Connectivity (ODBC)</a>, which is a low-level, high-performance interface that is designed specifically for relational data stores.
       </li>
       <li>
-        The <pkg>DBI</pkg> package provides a database interface definition for communication between R and relational database management systems.
+        The <pkg>DBI</pkg> package provides a database interface definition for communication between R and relational database management systems. It's worth noting that some packages try to follow this interface definition but many existing packages don't.
       </li>
       <li>
         The <pkg>RPresto</pkg> package implements a DBI-compliant interface to <a href="https://prestodb.io/">Presto</a>, an open source distributed SQL query engine for running interactive analytic queries against data sources of all sizes ranging from gigabytes to petabytes.
@@ -157,7 +157,10 @@
         The <pkg>sqldf</pkg> package provides functionalities to manipulate R Data Frames Using SQL.
       </li>
       <li>
-        The <pkg>pointblank</pkg> package provides provides tools to validate data tables in databases such as PostgreSQL and MySQL.
+        The <pkg>pointblank</pkg> package provides tools to validate data tables in databases such as PostgreSQL and MySQL.
+      </li>
+      <li>
+        The <pkg>TScompare</pkg> package provides utilities for comparing the equality of series on two databases.
       </li>
     </ul>
 
@@ -165,22 +168,37 @@
 
   <packagelist>
     <pkg>bigrquery</pkg>
+    <pkg>dplyr</pkg>
+    <pkg>dbplyr</pkg>
+    <pkg>dbfaker</pkg>
+    <pkg>dplyr.teradata</pkg>
     <pkg>DBI</pkg>
+    <pkg>DBItest</pkg>
     <pkg>elastic</pkg>
+    <pkg>filehashSQLite</pkg>
     <pkg>implyr</pkg>
     <pkg>influxdbr</pkg>
+    <pkg>liteq</pkg>
     <pkg>odbc</pkg>
+    <pkg>pointblank</pkg>
+    <pkg>pivot</pkg>
+    <pkg>pool</pkg>
     <pkg>RCassandra</pkg>
     <pkg>RcppRedis</pkg>
     <pkg>RPostgreSQL</pkg>
+    <pkg>RPresto</pkg>
     <pkg>rpostgis</pkg>
     <pkg>RSQLite</pkg>
     <pkg>RMySQL</pkg>
     <pkg>RMariaDB</pkg>
+    <pkg>RGreenplum</pkg>
     <pkg>ROracle</pkg>
     <pkg>RH2</pkg>
     <pkg>R4CouchDB</pkg>
     <pkg>RJDBC</pkg>
+    <pkg>sqldf</pkg>
+    <pkg>tidyr</pkg>
+    <pkg>TScompare</pkg>
     <pkg>MonetDBLite</pkg>
     <pkg>MonetDB.R</pkg>
     <pkg>mongolite</pkg>

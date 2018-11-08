@@ -47,11 +47,14 @@ view](https://github.com/terrytangyuan/ctv-databases) .
 This section includes packages that provides access to relational
 databases within R.
 
-  - The [RMariaDB](https://cran.r-project.org/package=RMariaDB) package provides the
-    interface to [MariaDB](https://mariadb.org/) and
+  - The [RMariaDB](https://cran.r-project.org/package=RMariaDB) package provides a
+    DBI-compliant interface to [MariaDB](https://mariadb.org/) and
     [MySQL](https://www.mysql.com/) .
   - The [RMySQL](https://cran.r-project.org/package=RMySQL) package provides the
-    interface to MySQL.
+    interface to MySQL. Note that this is the legacy DBI interface to
+    MySQL and MariaDB based on old code ported from S-PLUS. A modern
+    MySQL client based on Rcpp is available from the RMariaDB package we
+    listed above.
   - Packages for [PostgreSQL](https://www.postgresql.org/) :
       - The [RPostgreSQL](https://cran.r-project.org/package=RPostgreSQL) package
         provides a fully DBI-compliant Rcpp-backed interface to
@@ -100,7 +103,9 @@ databases within R.
     specifically for relational data stores.
   - The [DBI](https://cran.r-project.org/package=DBI) package provides a database
     interface definition for communication between R and relational
-    database management systems.
+    database management systems. It's worth noting that some packages
+    try to follow this interface definition but many existing packages
+    don't.
   - The [RPresto](https://cran.r-project.org/package=RPresto) package implements a
     DBI-compliant interface to [Presto](https://prestodb.io/) , an open
     source distributed SQL query engine for running interactive analytic
@@ -189,26 +194,39 @@ testing with databases, databases table manipulations, etc.
   - The [sqldf](https://cran.r-project.org/package=sqldf) package provides
     functionalities to manipulate R Data Frames Using SQL.
   - The [pointblank](https://cran.r-project.org/package=pointblank) package provides
-    provides tools to validate data tables in databases such as
-    PostgreSQL and MySQL.
+    tools to validate data tables in databases such as PostgreSQL and
+    MySQL.
+  - The [TScompare](https://cran.r-project.org/package=TScompare) package provides
+    utilities for comparing the equality of series on two databases.
 
 </div>
 
 ### CRAN packages:
 
   - [bigrquery](https://cran.r-project.org/package=bigrquery)
+  - [dbfaker](https://cran.r-project.org/package=dbfaker)
   - [DBI](https://cran.r-project.org/package=DBI)
+  - [DBItest](https://cran.r-project.org/package=DBItest)
+  - [dbplyr](https://cran.r-project.org/package=dbplyr)
+  - [dplyr](https://cran.r-project.org/package=dplyr)
+  - [dplyr.teradata](https://cran.r-project.org/package=dplyr.teradata)
   - [elastic](https://cran.r-project.org/package=elastic)
+  - [filehashSQLite](https://cran.r-project.org/package=filehashSQLite)
   - [implyr](https://cran.r-project.org/package=implyr)
   - [influxdbr](https://cran.r-project.org/package=influxdbr)
+  - [liteq](https://cran.r-project.org/package=liteq)
   - [MonetDB.R](https://cran.r-project.org/package=MonetDB.R)
   - [MonetDBLite](https://cran.r-project.org/package=MonetDBLite)
   - [mongolite](https://cran.r-project.org/package=mongolite)
   - [odbc](https://cran.r-project.org/package=odbc)
+  - [pivot](https://cran.r-project.org/package=pivot)
+  - [pointblank](https://cran.r-project.org/package=pointblank)
+  - [pool](https://cran.r-project.org/package=pool)
   - [R4CouchDB](https://cran.r-project.org/package=R4CouchDB)
   - [RCassandra](https://cran.r-project.org/package=RCassandra)
   - [RcppRedis](https://cran.r-project.org/package=RcppRedis)
   - [redux](https://cran.r-project.org/package=redux)
+  - [RGreenplum](https://cran.r-project.org/package=RGreenplum)
   - [RH2](https://cran.r-project.org/package=RH2)
   - [RJDBC](https://cran.r-project.org/package=RJDBC)
   - [RMariaDB](https://cran.r-project.org/package=RMariaDB)
@@ -216,7 +234,11 @@ testing with databases, databases table manipulations, etc.
   - [ROracle](https://cran.r-project.org/package=ROracle)
   - [rpostgis](https://cran.r-project.org/package=rpostgis)
   - [RPostgreSQL](https://cran.r-project.org/package=RPostgreSQL)
+  - [RPresto](https://cran.r-project.org/package=RPresto)
   - [RSQLite](https://cran.r-project.org/package=RSQLite)
+  - [sqldf](https://cran.r-project.org/package=sqldf)
+  - [tidyr](https://cran.r-project.org/package=tidyr)
+  - [TScompare](https://cran.r-project.org/package=TScompare)
   - [uptasticsearch](https://cran.r-project.org/package=uptasticsearch)
 
 ### Related links:
