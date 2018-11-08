@@ -42,6 +42,9 @@ maintainer](mailto:terrytangyuan@gmail.com) or submit a pull request or
 issue to the [Github repository of this task
 view](https://github.com/terrytangyuan/ctv-databases) .
 
+Suggestions and corrections by Achim Zeileis and Kirill Müller (as well
+as others I may have forgotten to add here) are gratefully acknowledged.
+
 **Relational Databases**
 
 This section includes packages that provides access to relational
