@@ -52,17 +52,31 @@ databases within R.
     [MySQL](https://www.mysql.com/) .
   - The [RMySQL](https://cran.r-project.org/package=RMySQL) package provides the
     interface to MySQL.
-  - The [RPostgreSQL](https://cran.r-project.org/package=RPostgreSQL) package
-    provides the interface to [PostgreSQL](https://www.postgresql.org/)
-    . There's also PostGIS [rpostgis](https://cran.r-project.org/package=rpostgis)
-    package which provides interface to its spatial extension
-    [PostGIS](http://postgis.net/) .
+  - Packages for [PostgreSQL](https://www.postgresql.org/) :
+      - The [RPostgreSQL](https://cran.r-project.org/package=RPostgreSQL) package
+        provides a fully DBI-compliant Rcpp-backed interface to
+        PostgreSQL.
+      - The [rpostgis](https://cran.r-project.org/package=rpostgis) package provides
+        the interface to its spatial extension
+        [PostGIS](http://postgis.net/) .
+      - The [RGreenplum](https://cran.r-project.org/package=RGreenplum) provides a
+        fully DBI-compliant interface to
+        [Greenplum](https://greenplum.org/) , an open-source parallel
+        database on top of PostgreSQL.
   - The [ROracle](https://cran.r-project.org/package=ROracle) package is a
     DBI-compliant [Oracle
     database](https://www.oracle.com/database/index.html) driver based
     on the OCI.
-  - The [RSQLite](https://cran.r-project.org/package=RSQLite) package provides the
-    interface to [SQLite](http://www.sqlite.org/) .
+  - Packages for [SQLite](http://www.sqlite.org/) :
+      - The [RSQLite](https://cran.r-project.org/package=RSQLite) package embeds the
+        SQLite database engine in R and provides an interface compliant
+        with the DBI package.
+      - The [filehashSQLite](https://cran.r-project.org/package=filehashSQLite)
+        package is a simple key-value database using SQLite as the
+        backend.
+      - The [liteq](https://cran.r-project.org/package=liteq) package provides
+        temporary and permanent message queues for R, built on top of
+        SQLite.
   - The [bigrquery](https://cran.r-project.org/package=bigrquery) package provides
     the interface to [Google
     BigQuery](https://developers.google.com/bigquery/) .
@@ -87,6 +101,16 @@ databases within R.
   - The [DBI](https://cran.r-project.org/package=DBI) package provides a database
     interface definition for communication between R and relational
     database management systems.
+  - The [RPresto](https://cran.r-project.org/package=RPresto) package implements a
+    DBI-compliant interface to [Presto](https://prestodb.io/) , an open
+    source distributed SQL query engine for running interactive analytic
+    queries against data sources of all sizes ranging from gigabytes to
+    petabytes.
+  - The [dplyr.teradata](https://cran.r-project.org/package=dplyr.teradata) package
+    is the Teradata backend for [dplyr](https://cran.r-project.org/package=dplyr)
+    package, which makes it possible to operate [Teradata
+    database](https://www.teradata.com/products-and-services/teradata-database/)
+    in the same way as manipulating data frames with dplyr.
   - The [RJDBC](https://cran.r-project.org/package=RJDBC) package is an
     implementation of R's DBI interface using JDBC as a back-end. This
     allows R to connect to any DBMS that has a JDBC driver.

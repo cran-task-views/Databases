@@ -41,13 +41,23 @@
         The <pkg>RMySQL</pkg> package provides the interface to MySQL.
       </li>
       <li>
-        The <pkg>RPostgreSQL</pkg> package provides the interface to <a href="https://www.postgresql.org/">PostgreSQL</a>. There's also PostGIS <pkg>rpostgis</pkg> package which provides interface to its spatial extension <a href="http://postgis.net/">PostGIS</a>.
+        Packages for <a href="https://www.postgresql.org/">PostgreSQL</a>:
+        <ul>
+          <li>The <pkg>RPostgreSQL</pkg> package provides a fully DBI-compliant Rcpp-backed interface to PostgreSQL.</li>
+          <li>The <pkg>rpostgis</pkg> package provides the interface to its spatial extension <a href="http://postgis.net/">PostGIS</a>.</li>
+          <li>The <pkg>RGreenplum</pkg> provides a fully DBI-compliant interface to <a href="https://greenplum.org/">Greenplum</a>, an open-source parallel database on top of PostgreSQL.</li>
+        </ul>
       </li>
       <li>
         The <pkg>ROracle</pkg> package is a DBI-compliant <a href="https://www.oracle.com/database/index.html">Oracle database</a> driver based on the OCI.
       </li>
       <li>
-        The <pkg>RSQLite</pkg> package provides the interface to <a href="http://www.sqlite.org/">SQLite</a>.
+        Packages for <a href="http://www.sqlite.org/">SQLite</a>:
+        <ul>
+          <li>The <pkg>RSQLite</pkg> package embeds the SQLite database engine in R and provides an interface compliant with the DBI package.</li>
+          <li>The <pkg>filehashSQLite</pkg> package is a simple key-value database using SQLite as the backend.</li>
+          <li>The <pkg>liteq</pkg> package provides temporary and permanent message queues for R, built on top of SQLite.</li>
+        </ul>
       </li>
       <li>
         The <pkg>bigrquery</pkg> package provides the interface to <a href="https://developers.google.com/bigquery/">Google BigQuery</a>.
@@ -69,6 +79,12 @@
       </li>
       <li>
         The <pkg>DBI</pkg> package provides a database interface definition for communication between R and relational database management systems.
+      </li>
+      <li>
+        The <pkg>RPresto</pkg> package implements a DBI-compliant interface to <a href="https://prestodb.io/">Presto</a>, an open source distributed SQL query engine for running interactive analytic queries against data sources of all sizes ranging from gigabytes to petabytes.
+      </li>
+      <li>
+        The <pkg>dplyr.teradata</pkg> package is the Teradata backend for <pkg>dplyr</pkg> package, which makes it possible to operate <a href="https://www.teradata.com/products-and-services/teradata-database/">Teradata database</a> in the same way as manipulating data frames with dplyr.
       </li>
       <li>
         The <pkg>RJDBC</pkg> package is an implementation of R's DBI interface using JDBC as a back-end. This allows R to connect to any DBMS that has a JDBC driver.
