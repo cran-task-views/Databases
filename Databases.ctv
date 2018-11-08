@@ -35,6 +35,9 @@
     </p>
     <ul>
       <li>
+        The <pkg>DBI</pkg> package provides a database interface definition for communication between R and relational database management systems. It's worth noting that some packages try to follow this interface definition (DBI-compliant) but many existing packages don't.
+      </li>
+      <li>
         The <pkg>RMariaDB</pkg> package provides a DBI-compliant interface to <a href="https://mariadb.org/">MariaDB</a> and <a href="https://www.mysql.com/">MySQL</a>.
       </li>
       <li>
@@ -76,9 +79,6 @@
       </li>
       <li>
         The <pkg>odbc</pkg> package provides a DBI-compliant interface to drivers of <a href="https://msdn.microsoft.com/en-us/library/ms710252(v=vs.85).aspx">Open Database Connectivity (ODBC)</a>, which is a low-level, high-performance interface that is designed specifically for relational data stores.
-      </li>
-      <li>
-        The <pkg>DBI</pkg> package provides a database interface definition for communication between R and relational database management systems. It's worth noting that some packages try to follow this interface definition but many existing packages don't.
       </li>
       <li>
         The <pkg>RPresto</pkg> package implements a DBI-compliant interface to <a href="https://prestodb.io/">Presto</a>, an open source distributed SQL query engine for running interactive analytic queries against data sources of all sizes ranging from gigabytes to petabytes.
@@ -142,7 +142,7 @@
         The <pkg>pool</pkg> package enables the creation of object pools, which make it less computationally expensive to fetch a new object. 
       </li>
       <li>
-        The <pkg>DBItest</pkg> package is a helper that tests 'DBI' back ends for conformity to the interface.
+        The <pkg>DBItest</pkg> package is a helper that tests DBI back ends for conformity to the interface.
       </li>
       <li>
         The <pkg>dbfaker</pkg> package is to tool to ensure the validity of database writes. It provides a set of utilities to analyze and type check the properties of data frames that are to be written to databases with SQL support.

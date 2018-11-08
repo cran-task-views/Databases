@@ -47,6 +47,11 @@ view](https://github.com/terrytangyuan/ctv-databases) .
 This section includes packages that provides access to relational
 databases within R.
 
+  - The [DBI](https://cran.r-project.org/package=DBI) package provides a database
+    interface definition for communication between R and relational
+    database management systems. It's worth noting that some packages
+    try to follow this interface definition (DBI-compliant) but many
+    existing packages don't.
   - The [RMariaDB](https://cran.r-project.org/package=RMariaDB) package provides a
     DBI-compliant interface to [MariaDB](https://mariadb.org/) and
     [MySQL](https://www.mysql.com/) .
@@ -101,11 +106,6 @@ databases within R.
     (ODBC)](https://msdn.microsoft.com/en-us/library/ms710252\(v=vs.85\).aspx)
     , which is a low-level, high-performance interface that is designed
     specifically for relational data stores.
-  - The [DBI](https://cran.r-project.org/package=DBI) package provides a database
-    interface definition for communication between R and relational
-    database management systems. It's worth noting that some packages
-    try to follow this interface definition but many existing packages
-    don't.
   - The [RPresto](https://cran.r-project.org/package=RPresto) package implements a
     DBI-compliant interface to [Presto](https://prestodb.io/) , an open
     source distributed SQL query engine for running interactive analytic
@@ -176,7 +176,7 @@ testing with databases, databases table manipulations, etc.
     of object pools, which make it less computationally expensive to
     fetch a new object.
   - The [DBItest](https://cran.r-project.org/package=DBItest) package is a helper
-    that tests 'DBI' back ends for conformity to the interface.
+    that tests DBI back ends for conformity to the interface.
   - The [dbfaker](https://cran.r-project.org/package=dbfaker) package is to tool to
     ensure the validity of database writes. It provides a set of
     utilities to analyze and type check the properties of data frames
