@@ -43,7 +43,7 @@ issue to the [Github repository of this task
 view](https://github.com/terrytangyuan/ctv-databases) .
 
 Suggestions and corrections by Achim Zeileis, Kirill Müller, and Hannes
-Muehleisen (as well as others I may have forgotten to add here) are
+Mühleisen (as well as others I may have forgotten to add here) are
 gratefully acknowledged.
 
 **Relational Databases**
