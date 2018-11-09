@@ -42,8 +42,9 @@ maintainer](mailto:terrytangyuan@gmail.com) or submit a pull request or
 issue to the [Github repository of this task
 view](https://github.com/terrytangyuan/ctv-databases) .
 
-Suggestions and corrections by Achim Zeileis and Kirill Müller (as well
-as others I may have forgotten to add here) are gratefully acknowledged.
+Suggestions and corrections by Achim Zeileis, Kirill Müller, and Hannes
+Muehleisen (as well as others I may have forgotten to add here) are
+gratefully acknowledged.
 
 **Relational Databases**
 
@@ -91,8 +92,9 @@ databases within R.
   - The [bigrquery](https://cran.r-project.org/package=bigrquery) package provides
     the interface to [Google
     BigQuery](https://developers.google.com/bigquery/) .
-  - [MonetDBLite](https://cran.r-project.org/package=MonetDBLite) provides the
-    interface to [MonetDB](https://www.monetdb.org/Home) . In addition, MonetDBLite can also run the database embedded in R directly.
+  - [MonetDBLite](https://cran.r-project.org/package=MonetDBLite) packages provides
+    the interface to [MonetDB](https://www.monetdb.org/Home) and can run
+    database embedded in R directly.
   - The [RDruid](https://github.com/druid-io/RDruid) package provides
     the interface to [Apache Druid](http://druid.io/) , a high
     performance analytics data store for event-driven data.
@@ -217,7 +219,6 @@ testing with databases, databases table manipulations, etc.
   - [implyr](https://cran.r-project.org/package=implyr)
   - [influxdbr](https://cran.r-project.org/package=influxdbr)
   - [liteq](https://cran.r-project.org/package=liteq)
-  - [MonetDB.R](https://cran.r-project.org/package=MonetDB.R)
   - [MonetDBLite](https://cran.r-project.org/package=MonetDBLite)
   - [mongolite](https://cran.r-project.org/package=mongolite)
   - [odbc](https://cran.r-project.org/package=odbc)

@@ -29,7 +29,7 @@
     </p>
     
     <p>
-      Suggestions and corrections by Achim Zeileis and Kirill Müller (as well as others I may have forgotten to add here) are gratefully acknowledged.
+      Suggestions and corrections by Achim Zeileis, Kirill Müller, and Hannes Muehleisen (as well as others I may have forgotten to add here) are gratefully acknowledged.
     </p>
 
     <p><strong>Relational Databases</strong></p>
@@ -70,7 +70,7 @@
         The <pkg>bigrquery</pkg> package provides the interface to <a href="https://developers.google.com/bigquery/">Google BigQuery</a>.
       </li>
       <li>
-        <pkg>MonetDBLite</pkg> and <pkg>MonetDB.R</pkg> packages provide the interface to <a href="https://www.monetdb.org/Home">MonetDB</a>.
+        <pkg>MonetDBLite</pkg> packages provides the interface to <a href="https://www.monetdb.org/Home">MonetDB</a> and can run database embedded in R directly.
       </li>
       <li>
         The <a href="https://github.com/druid-io/RDruid">RDruid</a> package provides the interface to <a href="http://druid.io/">Apache Druid</a>, a high performance analytics data store for event-driven data.
@@ -204,7 +204,6 @@
     <pkg>tidyr</pkg>
     <pkg>TScompare</pkg>
     <pkg>MonetDBLite</pkg>
-    <pkg>MonetDB.R</pkg>
     <pkg>mongolite</pkg>
     <pkg>redux</pkg>
     <pkg>uptasticsearch</pkg>
