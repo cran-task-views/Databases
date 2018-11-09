@@ -91,9 +91,8 @@ databases within R.
   - The [bigrquery](https://cran.r-project.org/package=bigrquery) package provides
     the interface to [Google
     BigQuery](https://developers.google.com/bigquery/) .
-  - [MonetDBLite](https://cran.r-project.org/package=MonetDBLite) and
-    [MonetDB.R](https://cran.r-project.org/package=MonetDB.R) packages provide the
-    interface to [MonetDB](https://www.monetdb.org/Home) .
+  - [MonetDBLite](https://cran.r-project.org/package=MonetDBLite) provides the
+    interface to [MonetDB](https://www.monetdb.org/Home) . In addition, MonetDBLite can also run the database embedded in R directly.
   - The [RDruid](https://github.com/druid-io/RDruid) package provides
     the interface to [Apache Druid](http://druid.io/) , a high
     performance analytics data store for event-driven data.
