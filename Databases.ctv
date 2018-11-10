@@ -29,7 +29,15 @@
     </p>
     
     <p>
-      Suggestions and corrections by Achim Zeileis, Kirill Müller, and Hannes Mühleisen (as well as others I may have forgotten to add here) are gratefully acknowledged.
+      The <code>ctv</code> package supports these Task Views. Its functions
+      <code>install.views</code> and <code>update.views</code> allow,
+      respectively, installation or update of packages from a given Task View;
+      the option <code>coreOnly</code> can restrict operations to packages labeled as
+      <em>core</em> below.
+    </p>
+
+    <p>
+      Suggestions and corrections by Achim Zeileis, Kirill Müller, Hannes Mühleisen, and Rich FitzJohn (as well as others I may have forgotten to add here) are gratefully acknowledged.
     </p>
 
     <p><strong>Relational Databases</strong></p>
@@ -98,7 +106,7 @@
       </li>
     </ul>
 
-    <p><strong>Non-relational Databases</strong></p>
+    <p><strong>Non-Relational Databases</strong></p>
 
     <p>
     This section includes packages that provides access to non-relational databases within R.
@@ -176,14 +184,14 @@
     <pkg>dbplyr</pkg>
     <pkg>dbfaker</pkg>
     <pkg>dplyr.teradata</pkg>
-    <pkg>DBI</pkg>
+    <pkg priority="core">DBI</pkg>
     <pkg>DBItest</pkg>
     <pkg>elastic</pkg>
     <pkg>filehashSQLite</pkg>
     <pkg>implyr</pkg>
     <pkg>influxdbr</pkg>
     <pkg>liteq</pkg>
-    <pkg>odbc</pkg>
+    <pkg priority="core">odbc</pkg>
     <pkg>pointblank</pkg>
     <pkg>pivot</pkg>
     <pkg>pool</pkg>

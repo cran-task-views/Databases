@@ -42,9 +42,14 @@ maintainer](mailto:terrytangyuan@gmail.com) or submit a pull request or
 issue to the [Github repository of this task
 view](https://github.com/terrytangyuan/ctv-databases) .
 
-Suggestions and corrections by Achim Zeileis, Kirill Müller, and Hannes
-Mühleisen (as well as others I may have forgotten to add here) are
-gratefully acknowledged.
+The `ctv` package supports these Task Views. Its functions
+`install.views` and `update.views` allow, respectively, installation or
+update of packages from a given Task View; the option `coreOnly` can
+restrict operations to packages labeled as *core* below.
+
+Suggestions and corrections by Achim Zeileis, Kirill Müller, Hannes
+Mühleisen, and Rich FitzJohn (as well as others I may have forgotten to
+add here) are gratefully acknowledged.
 
 **Relational Databases**
 
@@ -130,7 +135,7 @@ databases within R.
     Simple Storage Service (S3), Microsoft Azure Data Lake Store (ADLS),
     and Dell EMC Isilon.
 
-**Non-relational Databases**
+**Non-Relational Databases**
 
 This section includes packages that provides access to non-relational
 databases within R.
@@ -209,7 +214,7 @@ testing with databases, databases table manipulations, etc.
 
   - [bigrquery](https://cran.r-project.org/package=bigrquery)
   - [dbfaker](https://cran.r-project.org/package=dbfaker)
-  - [DBI](https://cran.r-project.org/package=DBI)
+  - [DBI](https://cran.r-project.org/package=DBI) (core)
   - [DBItest](https://cran.r-project.org/package=DBItest)
   - [dbplyr](https://cran.r-project.org/package=dbplyr)
   - [dplyr](https://cran.r-project.org/package=dplyr)
@@ -221,7 +226,7 @@ testing with databases, databases table manipulations, etc.
   - [liteq](https://cran.r-project.org/package=liteq)
   - [MonetDBLite](https://cran.r-project.org/package=MonetDBLite)
   - [mongolite](https://cran.r-project.org/package=mongolite)
-  - [odbc](https://cran.r-project.org/package=odbc)
+  - [odbc](https://cran.r-project.org/package=odbc) (core)
   - [pivot](https://cran.r-project.org/package=pivot)
   - [pointblank](https://cran.r-project.org/package=pointblank)
   - [pool](https://cran.r-project.org/package=pool)
