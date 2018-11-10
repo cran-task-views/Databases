@@ -12,12 +12,18 @@ and then run `ctv2md.R` to convert `Databases.ctv` to `README.md` so it's direct
 
 ### Additional steps for maintainer
 
+Checkout SVN repo first via the following:
+
+```
+svn checkout svn+ssh://terrytangyuan@svn.r-forge.r-project.org/svnroot/ctv/
+```
+
 ```
 # Push changes from Github to SVN
 cp ~/repos/ctv-databases/Databases.ctv ~/repos/ctv/pkg/inst/ctv/
-## Add file to svn (first time only)
-## svn add ~/repos/ctv/pkg/inst/ctv/
 cd ~/repos/ctv/
+## Add file to svn (first time only)
+# svn add pkg/inst/ctv/Databases.ctv
 svn up
 svn commit -m ...
 
