@@ -3,7 +3,7 @@
    <name>Databases</name>
    <topic>Databases with R</topic>
    <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2018-11-05</version>
+   <version>2018-11-10</version>
 
   <info>
     <p>
@@ -37,7 +37,7 @@
     </p>
 
     <p>
-      Suggestions and corrections by Achim Zeileis, Kirill Müller, Hannes Mühleisen, and Rich FitzJohn (as well as others I may have forgotten to add here) are gratefully acknowledged.
+      Suggestions and corrections by Achim Zeileis, Kirill Müller, Hannes Mühleisen, Rich FitzJohn, and Dirk Eddelbuettel (as well as others I may have forgotten to add here) are gratefully acknowledged. Thanks to Dirk Eddelbuettel who made the initial <code>.ctv</code> file and the Markdown conversion script available at the <a href="https://github.com/eddelbuettel/ctv-hpc">Github repository of CRAN Task View for High Performance Computing</a>. Last but not least, thanks to Achim Zeileis who helped me get started on organizing this task view.
     </p>
 
     <p><strong>Relational Databases</strong></p>
@@ -220,6 +220,7 @@
   <links>
     <view>ModelDeployment</view>
     <view>HighPerformanceComputing</view>
+    <a href="https://github.com/eddelbuettel/ctv-hpc">Github repository of CRAN Task View for High Performance Computing</a>
     <a href="https://github.com/terrytangyuan/ctv-databases">GitHub repository for this Task View</a>
   </links>
 

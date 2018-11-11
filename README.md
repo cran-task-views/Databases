@@ -4,7 +4,7 @@
 | --------------- | -------------------------------------------   
 | **Maintainer:** | Yuan Tang                                     
 | **Contact:**    | terrytangyuan at gmail.com                    
-| **Version:**    | 2018-11-05                                    
+| **Version:**    | 2018-11-10                                    
 | **URL:**        | <https://CRAN.R-project.org/view=Databases>   
 
 <div>
@@ -48,8 +48,13 @@ update of packages from a given Task View; the option `coreOnly` can
 restrict operations to packages labeled as *core* below.
 
 Suggestions and corrections by Achim Zeileis, Kirill Müller, Hannes
-Mühleisen, and Rich FitzJohn (as well as others I may have forgotten to
-add here) are gratefully acknowledged.
+Mühleisen, Rich FitzJohn, and Dirk Eddelbuettel (as well as others I
+may have forgotten to add here) are gratefully acknowledged. Thanks to
+Dirk Eddelbuettel who made the initial `.ctv` file and the Markdown
+conversion script available at the [Github repository of CRAN Task View
+for High Performance Computing](https://github.com/eddelbuettel/ctv-hpc)
+. Last but not least, thanks to Achim Zeileis who helped me get started
+on organizing this task view.
 
 **Relational Databases**
 
@@ -254,5 +259,7 @@ testing with databases, databases table manipulations, etc.
   - CRAN Task View: [ModelDeployment](ModelDeployment.html)
   - CRAN Task View:
     [HighPerformanceComputing](HighPerformanceComputing.html)
+  - [Github repository of CRAN Task View for High Performance
+    Computing](https://github.com/eddelbuettel/ctv-hpc)
   - [GitHub repository for this Task
     View](https://github.com/terrytangyuan/ctv-databases)

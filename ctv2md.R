@@ -1,4 +1,5 @@
 # Generate README.md from Databases.ctv
+# Thanks to Dirk Eddelbuettel who made the original script available here: https://github.com/eddelbuettel/ctv-hpc/blob/master/ctv2md.r
 
 library(XML)
 library(ctv)
