@@ -4,7 +4,7 @@
 | --------------- | -------------------------------------------   
 | **Maintainer:** | Yuan Tang                                     
 | **Contact:**    | terrytangyuan at gmail.com                    
-| **Version:**    | 2018-11-10                                    
+| **Version:**    | 2018-11-11                                    
 | **URL:**        | <https://CRAN.R-project.org/view=Databases>   
 
 <div>
@@ -106,7 +106,8 @@ databases within R.
         SQLite.
   - The [bigrquery](https://cran.r-project.org/package=bigrquery) package provides
     the interface to [Google
-    BigQuery](https://developers.google.com/bigquery/) .
+    BigQuery](https://developers.google.com/bigquery/) , Google's fully
+    managed, petabyte scale, low cost analytics data warehouse.
   - [MonetDBLite](https://cran.r-project.org/package=MonetDBLite) packages provides
     the interface to [MonetDB](https://www.monetdb.org/Home) and can run
     database embedded in R directly.
@@ -134,7 +135,7 @@ databases within R.
     is the Teradata backend for [dplyr](https://cran.r-project.org/package=dplyr)
     package, which makes it possible to operate [Teradata
     database](https://www.teradata.com/products-and-services/teradata-database/)
-    in the same way as manipulating data frames with dplyr.
+    in the same way as manipulating data frames with `dplyr`.
   - The [RJDBC](https://cran.r-project.org/package=RJDBC) package is an
     implementation of R's DBI interface using JDBC as a back-end. This
     allows R to connect to any DBMS that has a JDBC driver.
@@ -200,16 +201,16 @@ testing with databases, databases table manipulations, etc.
     ensure the validity of database writes. It provides a set of
     utilities to analyze and type check the properties of data frames
     that are to be written to databases with SQL support.
-  - The [dbplyr](https://cran.r-project.org/package=dbplyr) package is a dplyr
+  - The [dbplyr](https://cran.r-project.org/package=dbplyr) package is a `dplyr`
     back-end for databases that allows you to work with remote database
     tables as if they are in-memory data frames. Basic features works
     with any database that has a DBI back-end; more advanced features
     require SQL translation to be provided by the package author.
   - The [pivot](https://cran.r-project.org/package=pivot) package extends the
     tidyverse packages dbplyr and [tidyr](https://cran.r-project.org/package=tidyr)
-    functionality with pivot(), i.e. spread(), and unpivot(), i.e.
-    gather(), for reshaping remote tables. Currently only 'Microsoft SQL
-    Server' is supported.
+    functionality with `pivot()`, i.e. `spread()`, and `unpivot()`, i.e.
+    `gather()`, for reshaping remote tables. Currently only 'Microsoft
+    SQL Server' is supported.
   - The [sqldf](https://cran.r-project.org/package=sqldf) package provides
     functionalities to manipulate R Data Frames Using SQL.
   - The [pointblank](https://cran.r-project.org/package=pointblank) package provides

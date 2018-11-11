@@ -3,7 +3,7 @@
    <name>Databases</name>
    <topic>Databases with R</topic>
    <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2018-11-10</version>
+   <version>2018-11-11</version>
 
   <info>
     <p>
@@ -75,7 +75,7 @@
         </ul>
       </li>
       <li>
-        The <pkg>bigrquery</pkg> package provides the interface to <a href="https://developers.google.com/bigquery/">Google BigQuery</a>.
+        The <pkg>bigrquery</pkg> package provides the interface to <a href="https://developers.google.com/bigquery/">Google BigQuery</a>, Google's fully managed, petabyte scale, low cost analytics data warehouse.
       </li>
       <li>
         <pkg>MonetDBLite</pkg> packages provides the interface to <a href="https://www.monetdb.org/Home">MonetDB</a> and can run database embedded in R directly.
@@ -96,7 +96,7 @@
         The <pkg>RPresto</pkg> package implements a DBI-compliant interface to <a href="https://prestodb.io/">Presto</a>, an open source distributed SQL query engine for running interactive analytic queries against data sources of all sizes ranging from gigabytes to petabytes.
       </li>
       <li>
-        The <pkg>dplyr.teradata</pkg> package is the Teradata backend for <pkg>dplyr</pkg> package, which makes it possible to operate <a href="https://www.teradata.com/products-and-services/teradata-database/">Teradata database</a> in the same way as manipulating data frames with dplyr.
+        The <pkg>dplyr.teradata</pkg> package is the Teradata backend for <pkg>dplyr</pkg> package, which makes it possible to operate <a href="https://www.teradata.com/products-and-services/teradata-database/">Teradata database</a> in the same way as manipulating data frames with <code>dplyr</code>.
       </li>
       <li>
         The <pkg>RJDBC</pkg> package is an implementation of R's DBI interface using JDBC as a back-end. This allows R to connect to any DBMS that has a JDBC driver.
@@ -160,10 +160,10 @@
         The <pkg>dbfaker</pkg> package is to tool to ensure the validity of database writes. It provides a set of utilities to analyze and type check the properties of data frames that are to be written to databases with SQL support.
       </li>
       <li>
-        The <pkg>dbplyr</pkg> package is a dplyr back-end for databases that allows you to work with remote database tables as if they are in-memory data frames. Basic features works with any database that has a DBI back-end; more advanced features require SQL translation to be provided by the package author.
+        The <pkg>dbplyr</pkg> package is a <code>dplyr</code> back-end for databases that allows you to work with remote database tables as if they are in-memory data frames. Basic features works with any database that has a DBI back-end; more advanced features require SQL translation to be provided by the package author.
       </li>
       <li>
-        The <pkg>pivot</pkg> package extends the tidyverse packages dbplyr and <pkg>tidyr</pkg> functionality with pivot(), i.e. spread(), and unpivot(), i.e. gather(), for reshaping remote tables. Currently only 'Microsoft SQL Server' is supported.
+        The <pkg>pivot</pkg> package extends the tidyverse packages dbplyr and <pkg>tidyr</pkg> functionality with <code>pivot()</code>, i.e. <code>spread()</code>, and <code>unpivot()</code>, i.e. <code>gather()</code>, for reshaping remote tables. Currently only 'Microsoft SQL Server' is supported.
       </li>
       <li>
         The <pkg>sqldf</pkg> package provides functionalities to manipulate R Data Frames Using SQL.
