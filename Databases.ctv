@@ -37,7 +37,7 @@
     </p>
 
     <p>
-      Suggestions and corrections by Achim Zeileis, Kirill Müller, Hannes Mühleisen, Rich FitzJohn, and Dirk Eddelbuettel (as well as others I may have forgotten to add here) are gratefully acknowledged. Thanks to Dirk Eddelbuettel who made the initial <code>.ctv</code> file and the Markdown conversion script available at the <a href="https://github.com/eddelbuettel/ctv-hpc">Github repository of CRAN Task View for High Performance Computing</a>. Last but not least, thanks to Achim Zeileis who helped me get started on organizing this task view.
+      Suggestions and corrections by Achim Zeileis, Kirill Müller, Hannes Mühleisen, Rich FitzJohn, Dirk Eddelbuettel, and Hadley Wickham (as well as others I may have forgotten to add here) are gratefully acknowledged. Thanks to Dirk Eddelbuettel who made the initial <code>.ctv</code> file and the Markdown conversion script available at the Github repository of CRAN Task View for High Performance Computing <a href="https://github.com/eddelbuettel/ctv-hpc">here</a>. Last but not least, thanks to Achim Zeileis who helped me get started on organizing this task view.
     </p>
 
     <p><strong>Relational Databases</strong></p>
@@ -56,9 +56,9 @@
         The <pkg>RMySQL</pkg> package provides the interface to MySQL. Note that this is the legacy DBI interface to MySQL and MariaDB based on old code ported from S-PLUS. A modern MySQL client based on Rcpp is available from the RMariaDB package we listed above.
       </li>
       <li>
-        Packages for <a href="https://www.postgresql.org/">PostgreSQL</a>:
+        Packages for <a href="https://www.postgresql.org/">PostgreSQL</a>, an open-source relational database:
         <ul>
-          <li>The <pkg>RPostgreSQL</pkg> package provides a fully DBI-compliant Rcpp-backed interface to PostgreSQL.</li>
+          <li>The <pkg>RPostgreSQL</pkg> package and <pkg>RPostgres</pkg> package both provide fully DBI-compliant Rcpp-backed interfaces to PostgreSQL.</li>
           <li>The <pkg>rpostgis</pkg> package provides the interface to its spatial extension <a href="http://postgis.net/">PostGIS</a>.</li>
           <li>The <pkg>RGreenplum</pkg> provides a fully DBI-compliant interface to <a href="https://greenplum.org/">Greenplum</a>, an open-source parallel database on top of PostgreSQL.</li>
         </ul>
@@ -67,7 +67,7 @@
         The <pkg>ROracle</pkg> package is a DBI-compliant <a href="https://www.oracle.com/database/index.html">Oracle database</a> driver based on the OCI.
       </li>
       <li>
-        Packages for <a href="http://www.sqlite.org/">SQLite</a>:
+        Packages for <a href="http://www.sqlite.org/">SQLite</a>, a self-contained, high-reliability, embedded, full-featured, public-domain, SQL database engine:
         <ul>
           <li>The <pkg>RSQLite</pkg> package embeds the SQLite database engine in R and provides an interface compliant with the DBI package.</li>
           <li>The <pkg>filehashSQLite</pkg> package is a simple key-value database using SQLite as the backend.</li>
@@ -198,6 +198,7 @@
     <pkg>RCassandra</pkg>
     <pkg>RcppRedis</pkg>
     <pkg>RPostgreSQL</pkg>
+    <pkg>RPostgres</pkg>
     <pkg>RPresto</pkg>
     <pkg>rpostgis</pkg>
     <pkg>RSQLite</pkg>

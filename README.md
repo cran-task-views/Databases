@@ -48,13 +48,14 @@ update of packages from a given Task View; the option `coreOnly` can
 restrict operations to packages labeled as *core* below.
 
 Suggestions and corrections by Achim Zeileis, Kirill Müller, Hannes
-Mühleisen, Rich FitzJohn, and Dirk Eddelbuettel (as well as others I
-may have forgotten to add here) are gratefully acknowledged. Thanks to
-Dirk Eddelbuettel who made the initial `.ctv` file and the Markdown
-conversion script available at the [Github repository of CRAN Task View
-for High Performance Computing](https://github.com/eddelbuettel/ctv-hpc)
-. Last but not least, thanks to Achim Zeileis who helped me get started
-on organizing this task view.
+Mühleisen, Rich FitzJohn, Dirk Eddelbuettel, and Hadley Wickham (as
+well as others I may have forgotten to add here) are gratefully
+acknowledged. Thanks to Dirk Eddelbuettel who made the initial `.ctv`
+file and the Markdown conversion script available at the Github
+repository of CRAN Task View for High Performance Computing
+[here](https://github.com/eddelbuettel/ctv-hpc) . Last but not least,
+thanks to Achim Zeileis who helped me get started on organizing this
+task view.
 
 **Relational Databases**
 
@@ -74,9 +75,11 @@ databases within R.
     MySQL and MariaDB based on old code ported from S-PLUS. A modern
     MySQL client based on Rcpp is available from the RMariaDB package we
     listed above.
-  - Packages for [PostgreSQL](https://www.postgresql.org/) :
+  - Packages for [PostgreSQL](https://www.postgresql.org/) , an
+    open-source relational database:
       - The [RPostgreSQL](https://cran.r-project.org/package=RPostgreSQL) package
-        provides a fully DBI-compliant Rcpp-backed interface to
+        and [RPostgres](https://cran.r-project.org/package=RPostgres) package both
+        provide fully DBI-compliant Rcpp-backed interfaces to
         PostgreSQL.
       - The [rpostgis](https://cran.r-project.org/package=rpostgis) package provides
         the interface to its spatial extension
@@ -89,7 +92,9 @@ databases within R.
     DBI-compliant [Oracle
     database](https://www.oracle.com/database/index.html) driver based
     on the OCI.
-  - Packages for [SQLite](http://www.sqlite.org/) :
+  - Packages for [SQLite](http://www.sqlite.org/) , a self-contained,
+    high-reliability, embedded, full-featured, public-domain, SQL
+    database engine:
       - The [RSQLite](https://cran.r-project.org/package=RSQLite) package embeds the
         SQLite database engine in R and provides an interface compliant
         with the DBI package.
@@ -246,6 +251,7 @@ testing with databases, databases table manipulations, etc.
   - [RMySQL](https://cran.r-project.org/package=RMySQL)
   - [ROracle](https://cran.r-project.org/package=ROracle)
   - [rpostgis](https://cran.r-project.org/package=rpostgis)
+  - [RPostgres](https://cran.r-project.org/package=RPostgres)
   - [RPostgreSQL](https://cran.r-project.org/package=RPostgreSQL)
   - [RPresto](https://cran.r-project.org/package=RPresto)
   - [RSQLite](https://cran.r-project.org/package=RSQLite)
