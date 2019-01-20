@@ -65,6 +65,7 @@
       </li>
       <li>
         The <pkg>ROracle</pkg> package is a DBI-compliant <a href="https://www.oracle.com/database/index.html">Oracle database</a> driver based on the OCI.
+        The <pkg>ora</pkg> package provides convenience functions to query and browse a database through the <pkg>ROracle</pkg> connection.
       </li>
       <li>
         Packages for <a href="http://www.sqlite.org/">SQLite</a>, a self-contained, high-reliability, embedded, full-featured, public-domain, SQL database engine:
@@ -206,6 +207,7 @@
     <pkg>RMariaDB</pkg>
     <pkg>RGreenplum</pkg>
     <pkg>ROracle</pkg>
+    <pkg>ora</pkg>
     <pkg>RH2</pkg>
     <pkg>R4CouchDB</pkg>
     <pkg>RJDBC</pkg>

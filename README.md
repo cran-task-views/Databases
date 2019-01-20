@@ -91,7 +91,9 @@ databases within R.
   - The [ROracle](https://cran.r-project.org/package=ROracle) package is a
     DBI-compliant [Oracle
     database](https://www.oracle.com/database/index.html) driver based
-    on the OCI.
+    on the OCI. The [ora](https://cran.r-project.org/package=ora) package provides
+    convenience functions to query and browse a database through the
+    [ROracle](https://cran.r-project.org/package=ROracle) connection.
   - Packages for [SQLite](http://www.sqlite.org/) , a self-contained,
     high-reliability, embedded, full-featured, public-domain, SQL
     database engine:
@@ -238,6 +240,7 @@ testing with databases, databases table manipulations, etc.
   - [MonetDBLite](https://cran.r-project.org/package=MonetDBLite)
   - [mongolite](https://cran.r-project.org/package=mongolite)
   - [odbc](https://cran.r-project.org/package=odbc) (core)
+  - [ora](https://cran.r-project.org/package=ora)
   - [pivot](https://cran.r-project.org/package=pivot)
   - [pointblank](https://cran.r-project.org/package=pointblank)
   - [pool](https://cran.r-project.org/package=pool)
