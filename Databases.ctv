@@ -3,7 +3,7 @@
    <name>Databases</name>
    <topic>Databases with R</topic>
    <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2018-11-11</version>
+   <version>2019-02-04</version>
 
   <info>
     <p>
@@ -13,7 +13,7 @@
     <p>
       As datasets become larger and larger, it is impossible for people to save them in traditional file formats such as spreadsheet, raw text file, etc., which could not fit on devices with limited storage and could not be easily shared across collaborators. Instead, people nowadays tend to store data in databases for more scalable and reliable data management.
     </p>
-    
+
     <p>
       Database systems are often classified based on the <a href="https://en.wikipedia.org/wiki/Database_model">database models</a> that they support. <a href="https://en.wikipedia.org/wiki/Relational_database">Relational databases</a> became dominant in the 1980s. The data in relational databases is modeled as rows and columns in a series of tables with the use of <a href="https://en.wikipedia.org/wiki/SQL">SQL</a> to express the logic for writing and querying data. The tables are relational, e.g. you have a user who users your softwares and those softwares have creators and contributors. Non-relational databases became popular in recent years due to huge demand in storing unstructured data with the use of <a href="https://en.wikipedia.org/wiki/NoSQL">NoSQL</a> as the query language. Users generally don't need to define the data schema up front. If there are changing requirements in the applications, non-relational databases can be much easier to use and manage.
     </p>
@@ -27,7 +27,7 @@
         Github repository of this task view
       </a>.
     </p>
-    
+
     <p>
       The <code>ctv</code> package supports these Task Views. Its functions
       <code>install.views</code> and <code>update.views</code> allow,
@@ -103,7 +103,7 @@
         The <pkg>RJDBC</pkg> package is an implementation of R's DBI interface using JDBC as a back-end. This allows R to connect to any DBMS that has a JDBC driver.
       </li>
       <li>
-        The <pkg>implyr</pkg> package provides the back-end for <a href="https://impala.apache.org">Apache Impala</a>, which enables low-latency SQL queries on data stored in the Hadoop Distributed File System (HDFS), Apache HBase, Apache Kudu, Amazon Simple Storage Service (S3), Microsoft Azure Data Lake Store (ADLS), and Dell EMC Isilon. 
+        The <pkg>implyr</pkg> package provides the back-end for <a href="https://impala.apache.org">Apache Impala</a>, which enables low-latency SQL queries on data stored in the Hadoop Distributed File System (HDFS), Apache HBase, Apache Kudu, Amazon Simple Storage Service (S3), Microsoft Azure Data Lake Store (ADLS), and Dell EMC Isilon.
       </li>
     </ul>
 
@@ -144,7 +144,7 @@
       </li>
 
     </ul>
-    
+
     <p><strong>Databases Tools</strong></p>
 
     <p>
@@ -152,7 +152,7 @@
     </p>
     <ul>
       <li>
-        The <pkg>pool</pkg> package enables the creation of object pools, which make it less computationally expensive to fetch a new object. 
+        The <pkg>pool</pkg> package enables the creation of object pools, which make it less computationally expensive to fetch a new object.
       </li>
       <li>
         The <pkg>DBItest</pkg> package is a helper that tests DBI back ends for conformity to the interface.
