@@ -142,6 +142,9 @@
       <li>
         The <a href="https://github.com/mrcsparker/rrocksdb">rrocksdb</a> package provides access to <a href="http://rocksdb.org">RocksDB</a>.
       </li>
+      <li>
+        The <a href="https://cran.r-project.org/web/packages/neo4r/index.html">neo4r</a> package  provides a modern and flexible <a href="https://neo4j.com/">Neo4J</a> driver for R.
+      </li>
 
     </ul>
 
@@ -192,6 +195,7 @@
     <pkg>implyr</pkg>
     <pkg>influxdbr</pkg>
     <pkg>liteq</pkg>
+    <pkg>neo4r</pkg>
     <pkg priority="core">odbc</pkg>
     <pkg>pointblank</pkg>
     <pkg>pivot</pkg>

@@ -188,6 +188,10 @@ databases within R.
     DynamoDB](https://aws.amazon.com/dynamodb/) .
   - The [rrocksdb](https://github.com/mrcsparker/rrocksdb) package
     provides access to [RocksDB](http://rocksdb.org) .
+  - The
+    [neo4r](https://cran.r-project.org/whttps://cran.r-project.org/package=neo4r)
+    package provides a modern and flexible [Neo4J](https://neo4j.com/)
+    driver for R.
 
 **Databases Tools**
 
@@ -239,6 +243,7 @@ testing with databases, databases table manipulations, etc.
   - [liteq](https://cran.r-project.org/package=liteq)
   - [MonetDBLite](https://cran.r-project.org/package=MonetDBLite)
   - [mongolite](https://cran.r-project.org/package=mongolite)
+  - [neo4r](https://cran.r-project.org/package=neo4r)
   - [odbc](https://cran.r-project.org/package=odbc) (core)
   - [ora](https://cran.r-project.org/package=ora)
   - [pivot](https://cran.r-project.org/package=pivot)
