@@ -112,9 +112,6 @@ databases within R.
     the interface to [Google
     BigQuery](https://developers.google.com/bigquery/) , Google's fully
     managed, petabyte scale, low cost analytics data warehouse.
-  - [MonetDBLite](https://cran.r-project.org/package=MonetDBLite) packages provides
-    the interface to [MonetDB](https://www.monetdb.org/Home) and can run
-    database embedded in R directly.
   - The [RDruid](https://github.com/druid-io/RDruid) package provides
     the interface to [Apache Druid](http://druid.io/) , a high
     performance analytics data store for event-driven data.
@@ -135,11 +132,6 @@ databases within R.
     source distributed SQL query engine for running interactive analytic
     queries against data sources of all sizes ranging from gigabytes to
     petabytes.
-  - The [dplyr.teradata](https://cran.r-project.org/package=dplyr.teradata) package
-    is the Teradata backend for [dplyr](https://cran.r-project.org/package=dplyr)
-    package, which makes it possible to operate [Teradata
-    database](https://www.teradata.com/products-and-services/teradata-database/)
-    in the same way as manipulating data frames with `dplyr`.
   - The [RJDBC](https://cran.r-project.org/package=RJDBC) package is an
     implementation of R's DBI interface using JDBC as a back-end. This
     allows R to connect to any DBMS that has a JDBC driver.
@@ -190,10 +182,6 @@ databases within R.
     DynamoDB](https://aws.amazon.com/dynamodb/) .
   - The [rrocksdb](https://github.com/mrcsparker/rrocksdb) package
     provides access to [RocksDB](http://rocksdb.org) .
-  - The
-    [neo4r](https://cran.r-project.org/whttps://cran.r-project.org/package=neo4r)
-    package provides a modern and flexible [Neo4J](https://neo4j.com/)
-    driver for R.
 
 **Databases Tools**
 
@@ -214,11 +202,6 @@ testing with databases, databases table manipulations, etc.
     tables as if they are in-memory data frames. Basic features works
     with any database that has a DBI back-end; more advanced features
     require SQL translation to be provided by the package author.
-  - The [pivot](https://cran.r-project.org/package=pivot) package extends the
-    tidyverse packages dbplyr and [tidyr](https://cran.r-project.org/package=tidyr)
-    functionality with `pivot()`, i.e. `spread()`, and `unpivot()`, i.e.
-    `gather()`, for reshaping remote tables. Currently only 'Microsoft
-    SQL Server' is supported.
   - The [sqldf](https://cran.r-project.org/package=sqldf) package provides
     functionalities to manipulate R Data Frames Using SQL.
   - The [pointblank](https://cran.r-project.org/package=pointblank) package provides
@@ -237,18 +220,14 @@ testing with databases, databases table manipulations, etc.
   - [DBItest](https://cran.r-project.org/package=DBItest)
   - [dbplyr](https://cran.r-project.org/package=dbplyr)
   - [dplyr](https://cran.r-project.org/package=dplyr)
-  - [dplyr.teradata](https://cran.r-project.org/package=dplyr.teradata)
   - [elastic](https://cran.r-project.org/package=elastic)
   - [filehashSQLite](https://cran.r-project.org/package=filehashSQLite)
   - [implyr](https://cran.r-project.org/package=implyr)
   - [influxdbr](https://cran.r-project.org/package=influxdbr)
   - [liteq](https://cran.r-project.org/package=liteq)
-  - [MonetDBLite](https://cran.r-project.org/package=MonetDBLite)
   - [mongolite](https://cran.r-project.org/package=mongolite)
-  - [neo4r](https://cran.r-project.org/package=neo4r)
   - [odbc](https://cran.r-project.org/package=odbc) (core)
   - [ora](https://cran.r-project.org/package=ora)
-  - [pivot](https://cran.r-project.org/package=pivot)
   - [pointblank](https://cran.r-project.org/package=pointblank)
   - [pool](https://cran.r-project.org/package=pool)
   - [R4CouchDB](https://cran.r-project.org/package=R4CouchDB)

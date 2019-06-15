@@ -51,7 +51,7 @@
       </li>
       <li>
         The <pkg>RODBC</pkg> package provides access to databases through an ODBC interface.
-      </li>      
+      </li>
       <li>
         The <pkg>RMariaDB</pkg> package provides a DBI-compliant interface to <a href="https://mariadb.org/">MariaDB</a> and <a href="https://www.mysql.com/">MySQL</a>.
       </li>
@@ -82,9 +82,6 @@
         The <pkg>bigrquery</pkg> package provides the interface to <a href="https://developers.google.com/bigquery/">Google BigQuery</a>, Google's fully managed, petabyte scale, low cost analytics data warehouse.
       </li>
       <li>
-        <pkg>MonetDBLite</pkg> packages provides the interface to <a href="https://www.monetdb.org/Home">MonetDB</a> and can run database embedded in R directly.
-      </li>
-      <li>
         The <a href="https://github.com/druid-io/RDruid">RDruid</a> package provides the interface to <a href="http://druid.io/">Apache Druid</a>, a high performance analytics data store for event-driven data.
       </li>
       <li>
@@ -98,9 +95,6 @@
       </li>
       <li>
         The <pkg>RPresto</pkg> package implements a DBI-compliant interface to <a href="https://prestodb.io/">Presto</a>, an open source distributed SQL query engine for running interactive analytic queries against data sources of all sizes ranging from gigabytes to petabytes.
-      </li>
-      <li>
-        The <pkg>dplyr.teradata</pkg> package is the Teradata backend for <pkg>dplyr</pkg> package, which makes it possible to operate <a href="https://www.teradata.com/products-and-services/teradata-database/">Teradata database</a> in the same way as manipulating data frames with <code>dplyr</code>.
       </li>
       <li>
         The <pkg>RJDBC</pkg> package is an implementation of R's DBI interface using JDBC as a back-end. This allows R to connect to any DBMS that has a JDBC driver.
@@ -145,9 +139,6 @@
       <li>
         The <a href="https://github.com/mrcsparker/rrocksdb">rrocksdb</a> package provides access to <a href="http://rocksdb.org">RocksDB</a>.
       </li>
-      <li>
-        The <a href="https://cran.r-project.org/web/packages/neo4r/index.html">neo4r</a> package  provides a modern and flexible <a href="https://neo4j.com/">Neo4J</a> driver for R.
-      </li>
 
     </ul>
 
@@ -170,9 +161,6 @@
         The <pkg>dbplyr</pkg> package is a <code>dplyr</code> back-end for databases that allows you to work with remote database tables as if they are in-memory data frames. Basic features works with any database that has a DBI back-end; more advanced features require SQL translation to be provided by the package author.
       </li>
       <li>
-        The <pkg>pivot</pkg> package extends the tidyverse packages dbplyr and <pkg>tidyr</pkg> functionality with <code>pivot()</code>, i.e. <code>spread()</code>, and <code>unpivot()</code>, i.e. <code>gather()</code>, for reshaping remote tables. Currently only 'Microsoft SQL Server' is supported.
-      </li>
-      <li>
         The <pkg>sqldf</pkg> package provides functionalities to manipulate R Data Frames Using SQL.
       </li>
       <li>
@@ -190,7 +178,6 @@
     <pkg>dplyr</pkg>
     <pkg>dbplyr</pkg>
     <pkg>dbfaker</pkg>
-    <pkg>dplyr.teradata</pkg>
     <pkg priority="core">DBI</pkg>
     <pkg>DBItest</pkg>
     <pkg>elastic</pkg>
@@ -198,10 +185,8 @@
     <pkg>implyr</pkg>
     <pkg>influxdbr</pkg>
     <pkg>liteq</pkg>
-    <pkg>neo4r</pkg>
     <pkg priority="core">odbc</pkg>
     <pkg>pointblank</pkg>
-    <pkg>pivot</pkg>
     <pkg>pool</pkg>
     <pkg>RCassandra</pkg>
     <pkg>RcppRedis</pkg>
@@ -222,7 +207,6 @@
     <pkg>sqldf</pkg>
     <pkg>tidyr</pkg>
     <pkg>TScompare</pkg>
-    <pkg>MonetDBLite</pkg>
     <pkg>mongolite</pkg>
     <pkg>redux</pkg>
     <pkg>uptasticsearch</pkg>
