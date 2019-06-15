@@ -4,7 +4,7 @@
 | --------------- | -------------------------------------------   
 | **Maintainer:** | Yuan Tang                                     
 | **Contact:**    | terrytangyuan at gmail.com                    
-| **Version:**    | 2019-02-04                                    
+| **Version:**    | 2019-06-15                                    
 | **URL:**        | <https://CRAN.R-project.org/view=Databases>   
 
 <div>
