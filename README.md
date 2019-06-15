@@ -67,7 +67,8 @@ databases within R.
     database management systems. It's worth noting that some packages
     try to follow this interface definition (DBI-compliant) but many
     existing packages don't.
-  - The [RODBC](https://cran.r-project.org/package=RODBC) package provides access to databases through an ODBC interface.    
+  - The [RODBC](https://cran.r-project.org/package=RODBC) package provides access to
+    databases through an ODBC interface.
   - The [RMariaDB](https://cran.r-project.org/package=RMariaDB) package provides a
     DBI-compliant interface to [MariaDB](https://mariadb.org/) and
     [MySQL](https://www.mysql.com/) .
@@ -259,6 +260,7 @@ testing with databases, databases table manipulations, etc.
   - [RJDBC](https://cran.r-project.org/package=RJDBC)
   - [RMariaDB](https://cran.r-project.org/package=RMariaDB)
   - [RMySQL](https://cran.r-project.org/package=RMySQL)
+  - [RODBC](https://cran.r-project.org/package=RODBC)
   - [ROracle](https://cran.r-project.org/package=ROracle)
   - [rpostgis](https://cran.r-project.org/package=rpostgis)
   - [RPostgres](https://cran.r-project.org/package=RPostgres)
