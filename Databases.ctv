@@ -194,6 +194,7 @@
     <pkg priority="core">odbc</pkg>
     <pkg>pointblank</pkg>
     <pkg>pool</pkg>
+    <pkg>queryparser</pkg>
     <pkg>RCassandra</pkg>
     <pkg>RcppRedis</pkg>
     <pkg>RODBC</pkg>
@@ -211,6 +212,7 @@
     <pkg>R4CouchDB</pkg>
     <pkg>RJDBC</pkg>
     <pkg>sqldf</pkg>
+    <pkg>tidyquery</pkg>
     <pkg>tidyr</pkg>
     <pkg>TScompare</pkg>
     <pkg>mongolite</pkg>
