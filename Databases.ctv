@@ -161,7 +161,13 @@
         The <pkg>dbplyr</pkg> package is a <code>dplyr</code> back-end for databases that allows you to work with remote database tables as if they are in-memory data frames. Basic features works with any database that has a DBI back-end; more advanced features require SQL translation to be provided by the package author.
       </li>
       <li>
-        The <pkg>sqldf</pkg> package provides functionalities to manipulate R Data Frames Using SQL.
+        The <pkg>sqldf</pkg> package provides functionality to manipulate R data frames using SQL. It works by transparently setting up a database, copying R data frames into it, running SQL statements, and returning results as R data frames.
+      </li>
+      <li>
+        The <pkg>tidyquery</pkg> package runs SQL <code>SELECT</code> statements on R data frames. It works by using the <code>queryparser</code> package to translate <code>SELECT</code> statements into lists of R expressions, then evaluating the expressions with <code>dplyr</code>.
+      </li>
+      <li>
+        The <pkg>queryparser</pkg> package translates SQL <code>SELECT</code> statements into lists of unevaluated R expressions.
       </li>
       <li>
         The <pkg>pointblank</pkg> package provides tools to validate data tables in databases such as PostgreSQL and MySQL.
@@ -188,6 +194,7 @@
     <pkg priority="core">odbc</pkg>
     <pkg>pointblank</pkg>
     <pkg>pool</pkg>
+    <pkg>queryparser</pkg>
     <pkg>RCassandra</pkg>
     <pkg>RcppRedis</pkg>
     <pkg>RODBC</pkg>
@@ -205,6 +212,7 @@
     <pkg>R4CouchDB</pkg>
     <pkg>RJDBC</pkg>
     <pkg>sqldf</pkg>
+    <pkg>tidyquery</pkg>
     <pkg>tidyr</pkg>
     <pkg>TScompare</pkg>
     <pkg>mongolite</pkg>

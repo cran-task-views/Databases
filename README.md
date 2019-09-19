@@ -203,7 +203,16 @@ testing with databases, databases table manipulations, etc.
     with any database that has a DBI back-end; more advanced features
     require SQL translation to be provided by the package author.
   - The [sqldf](https://cran.r-project.org/package=sqldf) package provides
-    functionalities to manipulate R Data Frames Using SQL.
+    functionality to manipulate R data frames using SQL. It works by
+    transparently setting up a database, copying R data frames into it,
+    running SQL statements, and returning results as R data frames.
+  - The [tidyquery](https://cran.r-project.org/package=tidyquery) package runs SQL
+    `SELECT` statements on R data frames. It works by using the
+    `queryparser` package to translate `SELECT` statements into lists of
+    R expressions, then evaluating the expressions with `dplyr`.
+  - The [queryparser](https://cran.r-project.org/package=queryparser) package
+    translates SQL `SELECT` statements into lists of unevaluated R
+    expressions.
   - The [pointblank](https://cran.r-project.org/package=pointblank) package provides
     tools to validate data tables in databases such as PostgreSQL and
     MySQL.
@@ -230,6 +239,7 @@ testing with databases, databases table manipulations, etc.
   - [ora](https://cran.r-project.org/package=ora)
   - [pointblank](https://cran.r-project.org/package=pointblank)
   - [pool](https://cran.r-project.org/package=pool)
+  - [queryparser](https://cran.r-project.org/package=queryparser)
   - [R4CouchDB](https://cran.r-project.org/package=R4CouchDB)
   - [RCassandra](https://cran.r-project.org/package=RCassandra)
   - [RcppRedis](https://cran.r-project.org/package=RcppRedis)
@@ -247,6 +257,7 @@ testing with databases, databases table manipulations, etc.
   - [RPresto](https://cran.r-project.org/package=RPresto)
   - [RSQLite](https://cran.r-project.org/package=RSQLite)
   - [sqldf](https://cran.r-project.org/package=sqldf)
+  - [tidyquery](https://cran.r-project.org/package=tidyquery)
   - [tidyr](https://cran.r-project.org/package=tidyr)
   - [TScompare](https://cran.r-project.org/package=TScompare)
   - [uptasticsearch](https://cran.r-project.org/package=uptasticsearch)
