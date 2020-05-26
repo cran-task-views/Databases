@@ -3,7 +3,7 @@
    <name>Databases</name>
    <topic>Databases with R</topic>
    <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2019-06-15</version>
+   <version>2020-05-26</version>
 
   <info>
     <p>
@@ -102,6 +102,15 @@
       <li>
         The <pkg>implyr</pkg> package provides the back-end for <a href="https://impala.apache.org">Apache Impala</a>, which enables low-latency SQL queries on data stored in the Hadoop Distributed File System (HDFS), Apache HBase, Apache Kudu, Amazon Simple Storage Service (S3), Microsoft Azure Data Lake Store (ADLS), and Dell EMC Isilon.
       </li>
+      <li>
+        The <pkg>dbx</pkg> package provides intuitive functions for high performance batch operations and safe inserts/updates/deletes without writing SQL on top of <pkg>DBI</pkg>. It is designed for both research and production environments and supports multiple database backends such as Postgres, MySQL, MariaDB, and SQLite.
+      </li>
+      <li>
+        The <pkg>sparklyr</pkg> package provides provides a <pkg>dplyr</pkg> interface to <a href="https://spark.apache.org/">Apache Spark</a> DataFrames as well as an R interface to Spark’s distributed machine learning pipelines.
+      </li>
+      <li>
+        The <pkg>RClickhouse</pkg> is a <pkg>DBI</pkg> interface for <a href="https://clickhouse.yandex/">Yandex Clickhouse</a>, which is a high-performance relational column-store database to enable big data exploration and scaling to petabytes of data. It provides basic <pkg>dplyr</pkg> support by auto-generating SQL-commands using <pkg>dbplyr</pkg>.
+      </li>
     </ul>
 
     <p><strong>Non-Relational Databases</strong></p>
@@ -158,7 +167,7 @@
         The <pkg>dbfaker</pkg> package is to tool to ensure the validity of database writes. It provides a set of utilities to analyze and type check the properties of data frames that are to be written to databases with SQL support.
       </li>
       <li>
-        The <pkg>dbplyr</pkg> package is a <code>dplyr</code> back-end for databases that allows you to work with remote database tables as if they are in-memory data frames. Basic features works with any database that has a DBI back-end; more advanced features require SQL translation to be provided by the package author.
+        The <pkg>dbplyr</pkg> package is a <pkg>dplyr</pkg> back-end for databases that allows you to work with remote database tables as if they are in-memory data frames. Basic features works with any database that has a DBI back-end; more advanced features require SQL translation to be provided by the package author.
       </li>
       <li>
         The <pkg>sqldf</pkg> package provides functionalities to manipulate R Data Frames Using SQL.
@@ -179,6 +188,8 @@
     <pkg>dbfaker</pkg>
     <pkg priority="core">DBI</pkg>
     <pkg>DBItest</pkg>
+    <pkg>dbx</pkg>
+    <pkg>dplyr</pkg>
     <pkg>elastic</pkg>
     <pkg>filehashSQLite</pkg>
     <pkg>implyr</pkg>
@@ -188,6 +199,7 @@
     <pkg>pointblank</pkg>
     <pkg>pool</pkg>
     <pkg>RCassandra</pkg>
+    <pkg>RClickhouse</pkg>
     <pkg>RcppRedis</pkg>
     <pkg>RODBC</pkg>
     <pkg>RPostgreSQL</pkg>
@@ -203,6 +215,7 @@
     <pkg>RH2</pkg>
     <pkg>R4CouchDB</pkg>
     <pkg>RJDBC</pkg>
+    <pkg>sparklyr</pkg>
     <pkg>sqldf</pkg>
     <pkg>TScompare</pkg>
     <pkg>mongolite</pkg>

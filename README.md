@@ -4,7 +4,7 @@
 --------------- -------------------------------------------   
 **Maintainer:** Yuan Tang                                     
 **Contact:**    terrytangyuan at gmail.com                    
-**Version:**    2019-06-15                                    
+**Version:**    2020-05-26                                    
 **URL:**        <https://CRAN.R-project.org/view=Databases>   
 
 <div>
@@ -141,6 +141,23 @@ databases within R.
     Distributed File System (HDFS), Apache HBase, Apache Kudu, Amazon
     Simple Storage Service (S3), Microsoft Azure Data Lake Store (ADLS),
     and Dell EMC Isilon.
+  - The [dbx](https://cran.r-project.org/package=dbx) package provides intuitive
+    functions for high performance batch operations and safe
+    inserts/updates/deletes without writing SQL on top of
+    [DBI](https://cran.r-project.org/package=DBI). It is designed for both research
+    and production environments and supports multiple database backends
+    such as Postgres, MySQL, MariaDB, and SQLite.
+  - The [sparklyr](https://cran.r-project.org/package=sparklyr) package provides
+    provides a [dplyr](https://cran.r-project.org/package=dplyr) interface to
+    [Apache Spark](https://spark.apache.org/) DataFrames as well as an R
+    interface to Spark’s distributed machine learning pipelines.
+  - The [RClickhouse](https://cran.r-project.org/package=RClickhouse) is a
+    [DBI](https://cran.r-project.org/package=DBI) interface for [Yandex
+    Clickhouse](https://clickhouse.yandex/) , which is a
+    high-performance relational column-store database to enable big data
+    exploration and scaling to petabytes of data. It provides basic
+    [dplyr](https://cran.r-project.org/package=dplyr) support by auto-generating
+    SQL-commands using [dbplyr](https://cran.r-project.org/package=dbplyr).
 
 **Non-Relational Databases**
 
@@ -197,11 +214,12 @@ testing with databases, databases table manipulations, etc.
     ensure the validity of database writes. It provides a set of
     utilities to analyze and type check the properties of data frames
     that are to be written to databases with SQL support.
-  - The [dbplyr](https://cran.r-project.org/package=dbplyr) package is a `dplyr`
-    back-end for databases that allows you to work with remote database
-    tables as if they are in-memory data frames. Basic features works
-    with any database that has a DBI back-end; more advanced features
-    require SQL translation to be provided by the package author.
+  - The [dbplyr](https://cran.r-project.org/package=dbplyr) package is a
+    [dplyr](https://cran.r-project.org/package=dplyr) back-end for databases that
+    allows you to work with remote database tables as if they are
+    in-memory data frames. Basic features works with any database that
+    has a DBI back-end; more advanced features require SQL translation
+    to be provided by the package author.
   - The [sqldf](https://cran.r-project.org/package=sqldf) package provides
     functionalities to manipulate R Data Frames Using SQL.
   - The [pointblank](https://cran.r-project.org/package=pointblank) package provides
@@ -219,6 +237,8 @@ testing with databases, databases table manipulations, etc.
   - [DBI](https://cran.r-project.org/package=DBI) (core)
   - [DBItest](https://cran.r-project.org/package=DBItest)
   - [dbplyr](https://cran.r-project.org/package=dbplyr)
+  - [dbx](https://cran.r-project.org/package=dbx)
+  - [dplyr](https://cran.r-project.org/package=dplyr)
   - [elastic](https://cran.r-project.org/package=elastic)
   - [filehashSQLite](https://cran.r-project.org/package=filehashSQLite)
   - [implyr](https://cran.r-project.org/package=implyr)
@@ -231,6 +251,7 @@ testing with databases, databases table manipulations, etc.
   - [pool](https://cran.r-project.org/package=pool)
   - [R4CouchDB](https://cran.r-project.org/package=R4CouchDB)
   - [RCassandra](https://cran.r-project.org/package=RCassandra)
+  - [RClickhouse](https://cran.r-project.org/package=RClickhouse)
   - [RcppRedis](https://cran.r-project.org/package=RcppRedis)
   - [redux](https://cran.r-project.org/package=redux)
   - [RGreenplum](https://cran.r-project.org/package=RGreenplum)
@@ -245,6 +266,7 @@ testing with databases, databases table manipulations, etc.
   - [RPostgreSQL](https://cran.r-project.org/package=RPostgreSQL)
   - [RPresto](https://cran.r-project.org/package=RPresto)
   - [RSQLite](https://cran.r-project.org/package=RSQLite)
+  - [sparklyr](https://cran.r-project.org/package=sparklyr)
   - [sqldf](https://cran.r-project.org/package=sqldf)
   - [TScompare](https://cran.r-project.org/package=TScompare)
   - [uptasticsearch](https://cran.r-project.org/package=uptasticsearch)
