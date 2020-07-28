@@ -178,6 +178,9 @@
       <li>
         The <pkg>TScompare</pkg> package provides utilities for comparing the equality of series on two databases.
       </li>
+      <li>
+        The <pkg>dittodb</pkg> package provides functionality to test database interactions with any <pkg>DBI</pkg> compliant database backend. It includes functionality to use fixtures instead of direct database calls during testing as well as functionality to record those fixtures when interacting with a real database for later use in tests.
+      </li>
     </ul>
 
   </info>
@@ -188,6 +191,7 @@
     <pkg>dbfaker</pkg>
     <pkg priority="core">DBI</pkg>
     <pkg>DBItest</pkg>
+    <pkg>dittodb</pkg>
     <pkg>dbx</pkg>
     <pkg>dplyr</pkg>
     <pkg>elastic</pkg>
