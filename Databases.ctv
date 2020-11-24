@@ -82,7 +82,7 @@
         The <pkg>bigrquery</pkg> package provides the interface to <a href="https://developers.google.com/bigquery/">Google BigQuery</a>, Google's fully managed, petabyte scale, low cost analytics data warehouse.
       </li>
       <li>
-        The <a href="https://github.com/druid-io/RDruid">RDruid</a> package provides the interface to <a href="http://druid.io/">Apache Druid</a>, a high performance analytics data store for event-driven data.
+        The <a href="https://github.com/druid-io/RDruid">RDruid</a> package provides the interface to <a href="https://druid.apache.org/">Apache Druid</a>, a high performance analytics data store for event-driven data.
       </li>
       <li>
         The <pkg>RH2</pkg> package provides the interface to <a href="http://www.h2database.com/">H2 Database Engine</a>, the Java SQL database.
