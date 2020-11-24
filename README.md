@@ -113,7 +113,7 @@ databases within R.
     BigQuery](https://developers.google.com/bigquery/) , Google's fully
     managed, petabyte scale, low cost analytics data warehouse.
 -   The [RDruid](https://github.com/druid-io/RDruid) package provides
-    the interface to [Apache Druid](http://druid.io/) , a high
+    the interface to [Apache Druid](https://druid.apache.org/) , a high
     performance analytics data store for event-driven data.
 -   The [RH2](https://cran.r-project.org/package=RH2) package provides the interface
     to [H2 Database Engine](http://www.h2database.com/) , the Java SQL
