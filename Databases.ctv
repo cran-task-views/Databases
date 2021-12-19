@@ -3,7 +3,7 @@
    <name>Databases</name>
    <topic>Databases with R</topic>
    <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2020-05-26</version>
+   <version>2021-12-19</version>
 
   <info>
     <p>
@@ -164,9 +164,6 @@
         The <pkg>DBItest</pkg> package is a helper that tests DBI back ends for conformity to the interface.
       </li>
       <li>
-        The <pkg>dbfaker</pkg> package is to tool to ensure the validity of database writes. It provides a set of utilities to analyze and type check the properties of data frames that are to be written to databases with SQL support.
-      </li>
-      <li>
         The <pkg>dbplyr</pkg> package is a <pkg>dplyr</pkg> back-end for databases that allows you to work with remote database tables as if they are in-memory data frames. Basic features works with any database that has a DBI back-end; more advanced features require SQL translation to be provided by the package author.
       </li>
       <li>
@@ -188,7 +185,6 @@
   <packagelist>
     <pkg>bigrquery</pkg>
     <pkg>dbplyr</pkg>
-    <pkg>dbfaker</pkg>
     <pkg priority="core">DBI</pkg>
     <pkg>DBItest</pkg>
     <pkg>dittodb</pkg>
