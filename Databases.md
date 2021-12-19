@@ -1,234 +1,228 @@
-<CRANTaskView>
+---
+name: Databases
+topic: Databases with R
+maintainer: Yuan Tang
+email: terrytangyuan@gmail.com
+version: 2021-12-19
+---
 
-   <name>Databases</name>
-   <topic>Databases with R</topic>
-   <maintainer email="terrytangyuan@gmail.com">Yuan Tang</maintainer>
-   <version>2021-12-19</version>
-   <source>https://github.com/cran-task-views/Databases/</source>
 
-  <info>
-    <p>
-      This CRAN task view contains a list of packages related to accessibility of different databases. This does not include data import/export or data management.
-    </p>
 
-    <p>
-      As datasets become larger and larger, it is impossible for people to save them in traditional file formats such as spreadsheet, raw text file, etc., which could not fit on devices with limited storage and could not be easily shared across collaborators. Instead, people nowadays tend to store data in databases for more scalable and reliable data management.
-    </p>
+This CRAN task view contains a list of packages related to accessibility
+of different databases. This does not include data import/export or data
+management.
 
-    <p>
-      Database systems are often classified based on the <a href="https://en.wikipedia.org/wiki/Database_model">database models</a> that they support. <a href="https://en.wikipedia.org/wiki/Relational_database">Relational databases</a> became dominant in the 1980s. The data in relational databases is modeled as rows and columns in a series of tables with the use of <a href="https://en.wikipedia.org/wiki/SQL">SQL</a> to express the logic for writing and querying data. The tables are relational, e.g. you have a user who users your softwares and those softwares have creators and contributors. Non-relational databases became popular in recent years due to huge demand in storing unstructured data with the use of <a href="https://en.wikipedia.org/wiki/NoSQL">NoSQL</a> as the query language. Users generally don't need to define the data schema up front. If there are changing requirements in the applications, non-relational databases can be much easier to use and manage.
-    </p>
+As datasets become larger and larger, it is impossible for people to
+save them in traditional file formats such as spreadsheet, raw text
+file, etc., which could not fit on devices with limited storage and
+could not be easily shared across collaborators. Instead, people
+nowadays tend to store data in databases for more scalable and reliable
+data management.
 
-    <p>
-      The content presented in this Task View are undergoing rapid
-      changes in industries and academia. Please send any suggestions to the
-      <a href="mailto:terrytangyuan@gmail.com">task view maintainer</a>
-      or submit a pull request or issue to the
-      <a href="https://github.com/terrytangyuan/ctv-databases">
-        Github repository of this task view
-      </a>.
-    </p>
+Database systems are often classified based on the [database
+models](https://en.wikipedia.org/wiki/Database_model) that they support.
+[Relational
+databases](https://en.wikipedia.org/wiki/Relational_database) became
+dominant in the 1980s. The data in relational databases is modeled as
+rows and columns in a series of tables with the use of
+[SQL](https://en.wikipedia.org/wiki/SQL) to express the logic for
+writing and querying data. The tables are relational, e.g. you have a
+user who users your softwares and those softwares have creators and
+contributors. Non-relational databases became popular in recent years
+due to huge demand in storing unstructured data with the use of
+[NoSQL](https://en.wikipedia.org/wiki/NoSQL) as the query language.
+Users generally don't need to define the data schema up front. If there
+are changing requirements in the applications, non-relational databases
+can be much easier to use and manage.
 
-    <p>
-      The <code>ctv</code> package supports these Task Views. Its functions
-      <code>install.views</code> and <code>update.views</code> allow,
-      respectively, installation or update of packages from a given Task View;
-      the option <code>coreOnly</code> can restrict operations to packages labeled as
-      <em>core</em> below.
-    </p>
+The content presented in this Task View are undergoing rapid changes in
+industries and academia. Please send any suggestions to the [task view
+maintainer](mailto:terrytangyuan@gmail.com) or submit a pull request or
+issue to the [Github repository of this task
+view](https://github.com/terrytangyuan/ctv-databases) .
 
-    <p>
-      Suggestions and corrections by Achim Zeileis, Kirill Müller, Hannes Mühleisen, Rich FitzJohn, Dirk Eddelbuettel, and Hadley Wickham (as well as others I may have forgotten to add here) are gratefully acknowledged. Thanks to Dirk Eddelbuettel who made the initial <code>.ctv</code> file and the Markdown conversion script available at the Github repository of CRAN Task View for High Performance Computing <a href="https://github.com/eddelbuettel/ctv-hpc">here</a>. Last but not least, thanks to Achim Zeileis who helped me get started on organizing this task view.
-    </p>
+The `ctv` package supports these Task Views. Its functions
+`install.views` and `update.views` allow, respectively, installation or
+update of packages from a given Task View; the option `coreOnly` can
+restrict operations to packages labeled as *core* below.
 
-    <p><strong>Relational Databases</strong></p>
+Suggestions and corrections by Achim Zeileis, Kirill Müller, Hannes
+Mühleisen, Rich FitzJohn, Dirk Eddelbuettel, and Hadley Wickham (as well
+as others I may have forgotten to add here) are gratefully acknowledged.
+Thanks to Dirk Eddelbuettel who made the initial `.ctv` file and the
+Markdown conversion script available at the Github repository of CRAN
+Task View for High Performance Computing
+[here](https://github.com/eddelbuettel/ctv-hpc) . Last but not least,
+thanks to Achim Zeileis who helped me get started on organizing this
+task view.
 
-    <p>
-    This section includes packages that provides access to relational databases within R.
-    </p>
-    <ul>
-      <li>
-        The <pkg>DBI</pkg> package provides a database interface definition for communication between R and relational database management systems. It's worth noting that some packages try to follow this interface definition (DBI-compliant) but many existing packages don't.
-      </li>
-      <li>
-        The <pkg>RODBC</pkg> package provides access to databases through an ODBC interface.
-      </li>
-      <li>
-        The <pkg>RMariaDB</pkg> package provides a DBI-compliant interface to <a href="https://mariadb.org/">MariaDB</a> and <a href="https://www.mysql.com/">MySQL</a>.
-      </li>
-      <li>
-        The <pkg>RMySQL</pkg> package provides the interface to MySQL. Note that this is the legacy DBI interface to MySQL and MariaDB based on old code ported from S-PLUS. A modern MySQL client based on Rcpp is available from the RMariaDB package we listed above.
-      </li>
-      <li>
-        Packages for <a href="https://www.postgresql.org/">PostgreSQL</a>, an open-source relational database:
-        <ul>
-          <li>The <pkg>RPostgreSQL</pkg> package and <pkg>RPostgres</pkg> package both provide fully DBI-compliant Rcpp-backed interfaces to PostgreSQL.</li>
-          <li>The <pkg>rpostgis</pkg> package provides the interface to its spatial extension <a href="http://postgis.net/">PostGIS</a>.</li>
-          <li>The <pkg>RGreenplum</pkg> provides a fully DBI-compliant interface to <a href="https://greenplum.org/">Greenplum</a>, an open-source parallel database on top of PostgreSQL.</li>
-        </ul>
-      </li>
-      <li>
-        The <pkg>ROracle</pkg> package is a DBI-compliant <a href="https://www.oracle.com/database/index.html">Oracle database</a> driver based on the OCI.
-        The <pkg>ora</pkg> package provides convenience functions to query and browse a database through the <pkg>ROracle</pkg> connection.
-      </li>
-      <li>
-        Packages for <a href="http://www.sqlite.org/">SQLite</a>, a self-contained, high-reliability, embedded, full-featured, public-domain, SQL database engine:
-        <ul>
-          <li>The <pkg>RSQLite</pkg> package embeds the SQLite database engine in R and provides an interface compliant with the DBI package.</li>
-          <li>The <pkg>filehashSQLite</pkg> package is a simple key-value database using SQLite as the backend.</li>
-          <li>The <pkg>liteq</pkg> package provides temporary and permanent message queues for R, built on top of SQLite.</li>
-        </ul>
-      </li>
-      <li>
-        The <pkg>bigrquery</pkg> package provides the interface to <a href="https://developers.google.com/bigquery/">Google BigQuery</a>, Google's fully managed, petabyte scale, low cost analytics data warehouse.
-      </li>
-      <li>
-        The <github>druid-io/RDruid</github> package on GitHub provides the interface to <a href="https://druid.apache.org/">Apache Druid</a>, a high performance analytics data store for event-driven data.
-      </li>
-      <li>
-        The <pkg>RH2</pkg> package provides the interface to <a href="http://www.h2database.com/">H2 Database Engine</a>, the Java SQL database.
-      </li>
-      <li>
-        The <pkg>influxdbr</pkg> package provides the interface to <a href="https://docs.influxdata.com/influxdb">InfluxDB</a>, a time series database designed to handle high write and query loads.
-      </li>
-      <li>
-        The <pkg>odbc</pkg> package provides a DBI-compliant interface to drivers of <a href="https://msdn.microsoft.com/en-us/library/ms710252(v=vs.85).aspx">Open Database Connectivity (ODBC)</a>, which is a low-level, high-performance interface that is designed specifically for relational data stores.
-      </li>
-      <li>
-        The <pkg>RPresto</pkg> package implements a DBI-compliant interface to <a href="https://prestodb.io/">Presto</a>, an open source distributed SQL query engine for running interactive analytic queries against data sources of all sizes ranging from gigabytes to petabytes.
-      </li>
-      <li>
-        The <pkg>RJDBC</pkg> package is an implementation of R's DBI interface using JDBC as a back-end. This allows R to connect to any DBMS that has a JDBC driver.
-      </li>
-      <li>
-        The <pkg>implyr</pkg> package provides the back-end for <a href="https://impala.apache.org">Apache Impala</a>, which enables low-latency SQL queries on data stored in the Hadoop Distributed File System (HDFS), Apache HBase, Apache Kudu, Amazon Simple Storage Service (S3), Microsoft Azure Data Lake Store (ADLS), and Dell EMC Isilon.
-      </li>
-      <li>
-        The <pkg>dbx</pkg> package provides intuitive functions for high performance batch operations and safe inserts/updates/deletes without writing SQL on top of <pkg>DBI</pkg>. It is designed for both research and production environments and supports multiple database backends such as Postgres, MySQL, MariaDB, and SQLite.
-      </li>
-      <li>
-        The <pkg>sparklyr</pkg> package provides provides a <pkg>dplyr</pkg> interface to <a href="https://spark.apache.org/">Apache Spark</a> DataFrames as well as an R interface to Spark’s distributed machine learning pipelines.
-      </li>
-      <li>
-        The <pkg>RClickhouse</pkg> is a <pkg>DBI</pkg> interface for <a href="https://clickhouse.yandex/">Yandex Clickhouse</a>, which is a high-performance relational column-store database to enable big data exploration and scaling to petabytes of data. It provides basic <pkg>dplyr</pkg> support by auto-generating SQL-commands using <pkg>dbplyr</pkg>.
-      </li>
-    </ul>
+### Relational Databases
 
-    <p><strong>Non-Relational Databases</strong></p>
+This section includes packages that provides access to relational
+databases within R.
 
-    <p>
-    This section includes packages that provides access to non-relational databases within R.
-    </p>
+-   The `r pkg("DBI", priority = "core")` package provides a
+    database interface definition for communication between R and
+    relational database management systems. It's worth noting that some
+    packages try to follow this interface definition (DBI-compliant) but
+    many existing packages don't.
+-   The `r pkg("RODBC")` package provides access to
+    databases through an ODBC interface.
+-   The `r pkg("RMariaDB")` package provides a DBI-compliant
+    interface to [MariaDB](https://mariadb.org/) and
+    [MySQL](https://www.mysql.com/) .
+-   The `r pkg("RMySQL")` package provides the interface to
+    MySQL. Note that this is the legacy DBI interface to MySQL and
+    MariaDB based on old code ported from S-PLUS. A modern MySQL client
+    based on Rcpp is available from the RMariaDB package we listed
+    above.
+-   Packages for [PostgreSQL](https://www.postgresql.org/) , an
+    open-source relational database:
+    -   The `r pkg("RPostgreSQL")` package and
+        `r pkg("RPostgres")` package both provide fully
+        DBI-compliant Rcpp-backed interfaces to PostgreSQL.
+    -   The `r pkg("rpostgis")` package provides the
+        interface to its spatial extension
+        [PostGIS](http://postgis.net/) .
+    -   The `r pkg("RGreenplum")` provides a fully
+        DBI-compliant interface to [Greenplum](https://greenplum.org/) ,
+        an open-source parallel database on top of PostgreSQL.
+-   The `r pkg("ROracle")` package is a DBI-compliant
+    [Oracle database](https://www.oracle.com/database/index.html) driver
+    based on the OCI. The `r pkg("ora")` package provides
+    convenience functions to query and browse a database through the
+    `r pkg("ROracle")` connection.
+-   Packages for [SQLite](http://www.sqlite.org/) , a self-contained,
+    high-reliability, embedded, full-featured, public-domain, SQL
+    database engine:
+    -   The `r pkg("RSQLite")` package embeds the SQLite
+        database engine in R and provides an interface compliant with
+        the DBI package.
+    -   The `r pkg("filehashSQLite")` package is a simple
+        key-value database using SQLite as the backend.
+    -   The `r pkg("liteq")` package provides temporary and
+        permanent message queues for R, built on top of SQLite.
+-   The `r pkg("bigrquery")` package provides the interface
+    to [Google BigQuery](https://developers.google.com/bigquery/) ,
+    Google's fully managed, petabyte scale, low cost analytics data
+    warehouse.
+-   The `r github("druid-io/RDruid")` package on GitHub
+    provides the interface to [Apache Druid](https://druid.apache.org/)
+    , a high performance analytics data store for event-driven data.
+-   The `r pkg("RH2")` package provides the interface to [H2
+    Database Engine](http://www.h2database.com/) , the Java SQL
+    database.
+-   The `r pkg("influxdbr")` package provides the interface
+    to [InfluxDB](https://docs.influxdata.com/influxdb) , a time series
+    database designed to handle high write and query loads.
+-   The `r pkg("odbc", priority = "core")` package provides a
+    DBI-compliant interface to drivers of [Open Database Connectivity
+    (ODBC)](https://msdn.microsoft.com/en-us/library/ms710252(v=vs.85).aspx)
+    , which is a low-level, high-performance interface that is designed
+    specifically for relational data stores.
+-   The `r pkg("RPresto")` package implements a
+    DBI-compliant interface to [Presto](https://prestodb.io/) , an open
+    source distributed SQL query engine for running interactive analytic
+    queries against data sources of all sizes ranging from gigabytes to
+    petabytes.
+-   The `r pkg("RJDBC")` package is an implementation of
+    R's DBI interface using JDBC as a back-end. This allows R to
+    connect to any DBMS that has a JDBC driver.
+-   The `r pkg("implyr")` package provides the back-end for
+    [Apache Impala](https://impala.apache.org) , which enables
+    low-latency SQL queries on data stored in the Hadoop Distributed
+    File System (HDFS), Apache HBase, Apache Kudu, Amazon Simple Storage
+    Service (S3), Microsoft Azure Data Lake Store (ADLS), and Dell EMC
+    Isilon.
+-   The `r pkg("dbx")` package provides intuitive functions
+    for high performance batch operations and safe
+    inserts/updates/deletes without writing SQL on top of
+    `r pkg("DBI")`. It is designed for both research and
+    production environments and supports multiple database backends such
+    as Postgres, MySQL, MariaDB, and SQLite.
+-   The `r pkg("sparklyr")` package provides provides a
+    `r pkg("dplyr")` interface to [Apache
+    Spark](https://spark.apache.org/) DataFrames as well as an R
+    interface to Spark's distributed machine learning pipelines.
+-   The `r pkg("RClickhouse")` is a
+    `r pkg("DBI")` interface for [Yandex
+    Clickhouse](https://clickhouse.yandex/) , which is a
+    high-performance relational column-store database to enable big data
+    exploration and scaling to petabytes of data. It provides basic
+    `r pkg("dplyr")` support by auto-generating SQL-commands
+    using `r pkg("dbplyr")`.
 
-    <ul>
-      <li>
-        Packages for <a href="https://redis.io/">Redis</a>, an open-source, in-memory data structure store that can be used as a database, cache and message broker:
-        <ul>
-          <li>The <pkg>RcppRedis</pkg> package provides interface to Redis using <github>redis/hiredis</github>.</li>
-          <li>The <pkg>redux</pkg> package provides a low-level interface to Redis, allowing execution of arbitrary Redis commands with almost no interface, and a high-level generated interface to more than 200 redis commands.</li>
-        </ul>
-      </li>
-      <li>
-        Packages for <a href="http://elasticsearch.org/">Elasticsearch</a>, an open-source, RESTful, distributed search and analytics engine:
-        <ul>
-          <li>The <pkg>elastic</pkg> package provides a general purpose interface to Elasticsearch.</li>
-          <li>The <pkg>uptasticsearch</pkg> package is a Elasticsearch client tailored to data science workflows.
-</li>
-        </ul>
-      </li>
-      <li>The <pkg>mongolite</pkg> package provides a high-level, high-performance <a href="https://www.mongodb.com/">MongoDB</a> client based on <github>mongodb/mongo-c-driver</github>, including support for aggregation, indexing, map-reduce, streaming, SSL encryption and SASL authentication.</li>
-      <li>
-        The <pkg>R4CouchDB</pkg> package provides a collection of functions for basic database and document management operations in <a href="http://couchdb.apache.org/">CouchDB</a>.
-      </li>
-      <li>
-        The <pkg>RCassandra</pkg> package provides a direct interface (without the use of Java) to the most basic functionality of <a href="http://cassandra.apache.org/">Apache Cassanda</a> such as login, updates and queries.
-      </li>
-      <li>
-        The <github>cloudyr/aws.dynamodb</github> package on GitHub provides access to <a href="https://aws.amazon.com/dynamodb/">Amazon DynamoDB</a>.
-      </li>
-      <li>
-        The <github>mrcsparker/rrocksdb</github> package on GitHub provides access to <a href="http://rocksdb.org">RocksDB</a>.
-      </li>
+### Non-Relational Databases
 
-    </ul>
+This section includes packages that provides access to non-relational
+databases within R.
 
-    <p><strong>Databases Tools</strong></p>
+-   Packages for [Redis](https://redis.io/) , an open-source, in-memory
+    data structure store that can be used as a database, cache and
+    message broker:
+    -   The `r pkg("RcppRedis")` package provides interface
+        to Redis using `r github("redis/hiredis")`.
+    -   The `r pkg("redux")` package provides a low-level
+        interface to Redis, allowing execution of arbitrary Redis
+        commands with almost no interface, and a high-level generated
+        interface to more than 200 redis commands.
+-   Packages for [Elasticsearch](http://elasticsearch.org/) , an
+    open-source, RESTful, distributed search and analytics engine:
+    -   The `r pkg("elastic")` package provides a general
+        purpose interface to Elasticsearch.
+    -   The `r pkg("uptasticsearch")` package is a
+        Elasticsearch client tailored to data science workflows.
+-   The `r pkg("mongolite")` package provides a high-level,
+    high-performance [MongoDB](https://www.mongodb.com/) client based on
+    `r github("mongodb/mongo-c-driver")`, including support
+    for aggregation, indexing, map-reduce, streaming, SSL encryption and
+    SASL authentication.
+-   The `r pkg("R4CouchDB")` package provides a collection
+    of functions for basic database and document management operations
+    in [CouchDB](http://couchdb.apache.org/) .
+-   The `r pkg("RCassandra")` package provides a direct
+    interface (without the use of Java) to the most basic functionality
+    of [Apache Cassanda](http://cassandra.apache.org/) such as login,
+    updates and queries.
+-   The `r github("cloudyr/aws.dynamodb")` package on GitHub
+    provides access to [Amazon
+    DynamoDB](https://aws.amazon.com/dynamodb/) .
+-   The `r github("mrcsparker/rrocksdb")` package on GitHub
+    provides access to [RocksDB](http://rocksdb.org) .
 
-    <p>
-    This section includes packages that provides tools for working and testing with databases,  databases table manipulations, etc.
-    </p>
-    <ul>
-      <li>
-        The <pkg>pool</pkg> package enables the creation of object pools, which make it less computationally expensive to fetch a new object.
-      </li>
-      <li>
-        The <pkg>DBItest</pkg> package is a helper that tests DBI back ends for conformity to the interface.
-      </li>
-      <li>
-        The <pkg>dbplyr</pkg> package is a <pkg>dplyr</pkg> back-end for databases that allows you to work with remote database tables as if they are in-memory data frames. Basic features works with any database that has a DBI back-end; more advanced features require SQL translation to be provided by the package author.
-      </li>
-      <li>
-        The <pkg>sqldf</pkg> package provides functionalities to manipulate R Data Frames Using SQL.
-      </li>
-      <li>
-        The <pkg>pointblank</pkg> package provides tools to validate data tables in databases such as PostgreSQL and MySQL.
-      </li>
-      <li>
-        The <pkg>TScompare</pkg> package provides utilities for comparing the equality of series on two databases.
-      </li>
-      <li>
-        The <pkg>dittodb</pkg> package provides functionality to test database interactions with any <pkg>DBI</pkg> compliant database backend. It includes functionality to use fixtures instead of direct database calls during testing as well as functionality to record those fixtures when interacting with a real database for later use in tests.
-      </li>
-    </ul>
+### Databases Tools
 
-  </info>
+This section includes packages that provides tools for working and
+testing with databases, databases table manipulations, etc.
 
-  <packagelist>
-    <pkg>bigrquery</pkg>
-    <pkg>dbplyr</pkg>
-    <pkg priority="core">DBI</pkg>
-    <pkg>DBItest</pkg>
-    <pkg>dittodb</pkg>
-    <pkg>dbx</pkg>
-    <pkg>dplyr</pkg>
-    <pkg>elastic</pkg>
-    <pkg>filehashSQLite</pkg>
-    <pkg>implyr</pkg>
-    <pkg>influxdbr</pkg>
-    <pkg>liteq</pkg>
-    <pkg priority="core">odbc</pkg>
-    <pkg>pointblank</pkg>
-    <pkg>pool</pkg>
-    <pkg>RCassandra</pkg>
-    <pkg>RClickhouse</pkg>
-    <pkg>RcppRedis</pkg>
-    <pkg>RODBC</pkg>
-    <pkg>RPostgreSQL</pkg>
-    <pkg>RPostgres</pkg>
-    <pkg>RPresto</pkg>
-    <pkg>rpostgis</pkg>
-    <pkg>RSQLite</pkg>
-    <pkg>RMySQL</pkg>
-    <pkg>RMariaDB</pkg>
-    <pkg>RGreenplum</pkg>
-    <pkg>ROracle</pkg>
-    <pkg>ora</pkg>
-    <pkg>RH2</pkg>
-    <pkg>R4CouchDB</pkg>
-    <pkg>RJDBC</pkg>
-    <pkg>sparklyr</pkg>
-    <pkg>sqldf</pkg>
-    <pkg>TScompare</pkg>
-    <pkg>mongolite</pkg>
-    <pkg>redux</pkg>
-    <pkg>uptasticsearch</pkg>
-  </packagelist>
+-   The `r pkg("pool")` package enables the creation of
+    object pools, which make it less computationally expensive to fetch
+    a new object.
+-   The `r pkg("DBItest")` package is a helper that tests
+    DBI back ends for conformity to the interface.
+-   The `r pkg("dbplyr")` package is a
+    `r pkg("dplyr")` back-end for databases that allows you
+    to work with remote database tables as if they are in-memory data
+    frames. Basic features works with any database that has a DBI
+    back-end; more advanced features require SQL translation to be
+    provided by the package author.
+-   The `r pkg("sqldf")` package provides functionalities to
+    manipulate R Data Frames Using SQL.
+-   The `r pkg("pointblank")` package provides tools to
+    validate data tables in databases such as PostgreSQL and MySQL.
+-   The `r pkg("TScompare")` package provides utilities for
+    comparing the equality of series on two databases.
+-   The `r pkg("dittodb")` package provides functionality to
+    test database interactions with any `r pkg("DBI")`
+    compliant database backend. It includes functionality to use
+    fixtures instead of direct database calls during testing as well as
+    functionality to record those fixtures when interacting with a real
+    database for later use in tests.
 
-  <links>
-    <view>ModelDeployment</view>
-    <view>HighPerformanceComputing</view>
-    <a href="https://github.com/eddelbuettel/ctv-hpc">Github repository of CRAN Task View for High Performance Computing</a>
-    <a href="https://github.com/terrytangyuan/ctv-databases">GitHub repository for this Task View</a>
-  </links>
 
-</CRANTaskView>
+
+### Links
+-   [Github repository of CRAN Task View for High Performance
+    Computing](https://github.com/eddelbuettel/ctv-hpc)
+-   [GitHub repository for this Task
+    View](https://github.com/terrytangyuan/ctv-databases)
