@@ -74,7 +74,7 @@ databases within R.
     DBI-compliant interface to [Greenplum](https://greenplum.org/),
     an open-source parallel database on top of PostgreSQL.
 - The `r pkg("ROracle")` package is a DBI-compliant
-  [Oracle database](https://www.oracle.com/database/index.html) driver
+  [Oracle database](https://www.oracle.com/database/) driver
   based on the OCI. The `r pkg("ora")` package provides
   convenience functions to query and browse a database through the
   `r pkg("ROracle")` connection.
@@ -206,3 +206,8 @@ testing with databases, databases table manipulations, etc.
   fixtures instead of direct database calls during testing as well as
   functionality to record those fixtures when interacting with a real
   database for later use in tests.
+
+### Links
+
+- [DBI package web page](https://dbi.r-dbi.org/)
+- [RStudio: Databases using R](https://db.rstudio.com/)
