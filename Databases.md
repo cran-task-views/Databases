@@ -1,7 +1,7 @@
 ---
 name: Databases
 topic: Databases with R
-maintainer: Yuan Tang
+maintainer: Yuan Tang, James Joseph Balamuta
 email: terrytangyuan@gmail.com
 version: 2021-12-19
 source: https://github.com/cran-task-views/Databases/
@@ -137,6 +137,9 @@ databases within R.
   exploration and scaling to petabytes of data. It provides basic
   `r pkg("dplyr")` support by auto-generating SQL-commands
   using `r pkg("dbplyr")`.
+- The `r pkg("Hmisc")` provides a wrapper function `Hmisc::mdb.get()`
+  that uses the [mdbtools](https://github.com/mdbtools/mdbtools) utility 
+  to read from Microsoft Access database on Unix-alike systems.
 
 
 ### Non-relational databases
@@ -206,6 +209,13 @@ testing with databases, databases table manipulations, etc.
   fixtures instead of direct database calls during testing as well as
   functionality to record those fixtures when interacting with a real
   database for later use in tests.
+- The `r pkg("tfio")` package provides the ability to use
+  [Apache Ignite](https://ignite.apache.org/), which handles
+  distributed database management for high-performance computing
+  with in-memory speed.
+- The `r github("daroczig/dbr")` package on GitHub
+  provides convenient database connections and queries from R
+  using YAML configuration files and templates.
 
 ### Links
 
