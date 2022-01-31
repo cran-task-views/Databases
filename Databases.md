@@ -216,6 +216,10 @@ testing with databases, databases table manipulations, etc.
 - The `r github("daroczig/dbr")` package on GitHub
   provides convenient database connections and queries from R
   using YAML configuration files and templates.
+- The `r pkg("rocker")` package provides a `r pkg("R6")` class interface
+  for handling relational database connections using `r pkg("DBI")` as backend.
+  The purpose is having an intuitive object allowing straightforward
+  handling of SQL databases.
 
 ### Links
 
