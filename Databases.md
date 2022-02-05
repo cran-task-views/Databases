@@ -3,7 +3,7 @@ name: Databases
 topic: Databases with R
 maintainer: Yuan Tang, James Joseph Balamuta
 email: terrytangyuan@gmail.com
-version: 2021-12-19
+version: 2022-02-05
 source: https://github.com/cran-task-views/Databases/
 ---
 
@@ -130,13 +130,6 @@ databases within R.
   `r pkg("dplyr")` interface to [Apache
   Spark](https://spark.apache.org/) DataFrames as well as an R
   interface to Spark's distributed machine learning pipelines.
-- The `r pkg("RClickhouse")` is a
-  `r pkg("DBI")` interface for [Yandex
-  Clickhouse](https://clickhouse.yandex/), which is a
-  high-performance relational column-store database to enable big data
-  exploration and scaling to petabytes of data. It provides basic
-  `r pkg("dplyr")` support by auto-generating SQL-commands
-  using `r pkg("dbplyr")`.
 - The `r pkg("Hmisc")` provides a wrapper function `Hmisc::mdb.get()`
   that uses the [mdbtools](https://github.com/mdbtools/mdbtools) utility 
   to read from Microsoft Access database on Unix-alike systems.
