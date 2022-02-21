@@ -52,13 +52,14 @@ databases within R.
   relational database management systems. It's worth noting that some
   packages try to follow this interface definition (DBI-compliant) but
   many existing packages don't.
-- The `r pkg("RODBC")` package provides access to
-  databases through an ODBC interface.
+- The `r pkg("RODBC", priority = "core")` package provides access to
+  databases through an ODBC interface. This package is maintained by the
+  R Core Team and depends only on base R. See alternative odbc package
+  below.
 - The `r pkg("odbc", priority = "core")` package provides a
-  DBI-compliant interface to drivers of [Open Database Connectivity
-  (ODBC)](https://msdn.microsoft.com/en-us/library/ms710252(v=vs.85).aspx),
-  which is a low-level, high-performance interface that is designed
-  specifically for relational data stores.
+  DBI-compliant interface to ODBC drivers. This package is maintained by
+  RStudio and has a number of package dependencies. See alternative
+  RODBC package above.
 - The `r pkg("RMariaDB")` package provides a DBI-compliant
   interface to [MariaDB](https://mariadb.org/) and
   [MySQL](https://www.mysql.com/).
@@ -217,5 +218,7 @@ testing with databases, database table manipulations, etc.
 
 ### Links
 
-- [DBI package web page](https://dbi.r-dbi.org/)
-- [RStudio: Databases using R](https://db.rstudio.com/)
+* [DBI package web page](https://dbi.r-dbi.org/)
+* [RStudio: Databases using R](https://db.rstudio.com/)
+* [Open Database Connectivity
+  (ODBC)](https://docs.microsoft.com/en-us/sql/odbc/)
