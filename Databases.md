@@ -180,6 +180,9 @@ databases within R.
 This section includes packages that provides tools for working and
 testing with databases, database table manipulations, etc.
 
+- The `r pkg("MSSQL")` package extends the functionality of the RODBC
+  package to work with Microsoft SQL Server databases. Makes it easier
+  to browse the database and examine individual tables and views.
 - The `r pkg("pool")` package enables the creation of
   object pools, which make it less computationally expensive to fetch
   a new object.
