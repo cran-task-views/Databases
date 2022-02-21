@@ -52,8 +52,14 @@ databases within R.
   relational database management systems. It's worth noting that some
   packages try to follow this interface definition (DBI-compliant) but
   many existing packages don't.
-- The `r pkg("RODBC")` package provides access to
-  databases through an ODBC interface.
+- The `r pkg("RODBC", priority = "core")` package provides access to
+  databases through an ODBC interface. This package is maintained by the
+  R Core Team and depends only on base R. See alternative odbc package
+  below.
+- The `r pkg("odbc", priority = "core")` package provides a
+  DBI-compliant interface to ODBC drivers. This package is maintained by
+  RStudio and has a number of package dependencies. See alternative
+  RODBC package above.
 - The `r pkg("RMariaDB")` package provides a DBI-compliant
   interface to [MariaDB](https://mariadb.org/) and
   [MySQL](https://www.mysql.com/).
@@ -101,11 +107,6 @@ databases within R.
 - The `r pkg("influxdbr")` package provides the interface
   to [InfluxDB](https://docs.influxdata.com/influxdb), a time series
   database designed to handle high write and query loads.
-- The `r pkg("odbc", priority = "core")` package provides a
-  DBI-compliant interface to drivers of [Open Database Connectivity
-  (ODBC)](https://msdn.microsoft.com/en-us/library/ms710252(v=vs.85).aspx),
-  which is a low-level, high-performance interface that is designed
-  specifically for relational data stores.
 - The `r pkg("RPresto")` package implements a
   DBI-compliant interface to [Presto](https://prestodb.io/), an open
   source distributed SQL query engine for running interactive analytic
@@ -131,7 +132,7 @@ databases within R.
   Spark](https://spark.apache.org/) DataFrames as well as an R
   interface to Spark's distributed machine learning pipelines.
 - The `r pkg("Hmisc")` provides a wrapper function `Hmisc::mdb.get()`
-  that uses the [mdbtools](https://github.com/mdbtools/mdbtools) utility 
+  that uses the [mdbtools](https://github.com/mdbtools/mdbtools) utility
   to read from Microsoft Access database on Unix-alike systems.
 
 
@@ -174,11 +175,14 @@ databases within R.
   provides access to [RocksDB](http://rocksdb.org).
 
 
-### Databases tools
+### Database tools
 
 This section includes packages that provides tools for working and
-testing with databases, databases table manipulations, etc.
+testing with databases, database table manipulations, etc.
 
+- The `r pkg("MSSQL")` package extends the functionality of the RODBC
+  package to work with Microsoft SQL Server databases. Makes it easier
+  to browse the database and examine individual tables and views.
 - The `r pkg("pool")` package enables the creation of
   object pools, which make it less computationally expensive to fetch
   a new object.
@@ -214,7 +218,10 @@ testing with databases, databases table manipulations, etc.
   The purpose is having an intuitive object allowing straightforward
   handling of SQL databases.
 
+
 ### Links
 
-- [DBI package web page](https://dbi.r-dbi.org/)
-- [RStudio: Databases using R](https://db.rstudio.com/)
+* [DBI package web page](https://dbi.r-dbi.org/)
+* [RStudio: Databases using R](https://db.rstudio.com/)
+* [Open Database Connectivity
+  (ODBC)](https://docs.microsoft.com/en-us/sql/odbc/)
