@@ -131,7 +131,7 @@ databases within R.
   Spark](https://spark.apache.org/) DataFrames as well as an R
   interface to Spark's distributed machine learning pipelines.
 - The `r pkg("Hmisc")` provides a wrapper function `Hmisc::mdb.get()`
-  that uses the [mdbtools](https://github.com/mdbtools/mdbtools) utility 
+  that uses the [mdbtools](https://github.com/mdbtools/mdbtools) utility
   to read from Microsoft Access database on Unix-alike systems.
 
 
@@ -174,10 +174,10 @@ databases within R.
   provides access to [RocksDB](http://rocksdb.org).
 
 
-### Databases tools
+### Database tools
 
 This section includes packages that provides tools for working and
-testing with databases, databases table manipulations, etc.
+testing with databases, database table manipulations, etc.
 
 - The `r pkg("pool")` package enables the creation of
   object pools, which make it less computationally expensive to fetch
@@ -213,6 +213,7 @@ testing with databases, databases table manipulations, etc.
   for handling relational database connections using `r pkg("DBI")` as backend.
   The purpose is having an intuitive object allowing straightforward
   handling of SQL databases.
+
 
 ### Links
 
