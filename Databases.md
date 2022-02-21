@@ -54,6 +54,11 @@ databases within R.
   many existing packages don't.
 - The `r pkg("RODBC")` package provides access to
   databases through an ODBC interface.
+- The `r pkg("odbc", priority = "core")` package provides a
+  DBI-compliant interface to drivers of [Open Database Connectivity
+  (ODBC)](https://msdn.microsoft.com/en-us/library/ms710252(v=vs.85).aspx),
+  which is a low-level, high-performance interface that is designed
+  specifically for relational data stores.
 - The `r pkg("RMariaDB")` package provides a DBI-compliant
   interface to [MariaDB](https://mariadb.org/) and
   [MySQL](https://www.mysql.com/).
@@ -101,11 +106,6 @@ databases within R.
 - The `r pkg("influxdbr")` package provides the interface
   to [InfluxDB](https://docs.influxdata.com/influxdb), a time series
   database designed to handle high write and query loads.
-- The `r pkg("odbc", priority = "core")` package provides a
-  DBI-compliant interface to drivers of [Open Database Connectivity
-  (ODBC)](https://msdn.microsoft.com/en-us/library/ms710252(v=vs.85).aspx),
-  which is a low-level, high-performance interface that is designed
-  specifically for relational data stores.
 - The `r pkg("RPresto")` package implements a
   DBI-compliant interface to [Presto](https://prestodb.io/), an open
   source distributed SQL query engine for running interactive analytic
