@@ -198,8 +198,6 @@ testing with databases, database table manipulations, etc.
   manipulate R Data Frames Using SQL.
 - The `r pkg("pointblank")` package provides tools to
   validate data tables in databases such as PostgreSQL and MySQL.
-- The `r pkg("TScompare")` package provides utilities for
-  comparing the equality of series on two databases.
 - The `r pkg("dittodb")` package provides functionality to
   test database interactions with any `r pkg("DBI")`
   compliant database backend. It includes functionality to use
