@@ -164,10 +164,6 @@ databases within R.
 - The `r pkg("R4CouchDB")` package provides a collection
   of functions for basic database and document management operations
   in [CouchDB](http://couchdb.apache.org/).
-- The `r pkg("RCassandra")` package provides a direct
-  interface (without the use of Java) to the most basic functionality
-  of [Apache Cassanda](http://cassandra.apache.org/) such as login,
-  updates and queries.
 - The `r github("cloudyr/aws.dynamodb")` package on GitHub
   provides access to [Amazon
   DynamoDB](https://aws.amazon.com/dynamodb/).
