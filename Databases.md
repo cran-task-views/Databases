@@ -211,6 +211,8 @@ testing with databases, database table manipulations, etc.
   for handling relational database connections using `r pkg("DBI")` as backend.
   The purpose is having an intuitive object allowing straightforward
   handling of SQL databases.
+- The `r pkg("SQRL")` package streamlines exploratory and interactive sessions
+  on ODBC databases, and allows R code within SQL scripts.
 
 
 ### Links
