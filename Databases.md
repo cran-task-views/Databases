@@ -94,6 +94,8 @@ databases within R.
       key-value database using SQLite as the backend.
   -   The `r pkg("liteq")` package provides temporary and
       permanent message queues for R, built on top of SQLite.
+- The `r pkg("duckdb")` package provides a DBI interface to [DuckDb](https://duckdb.org/),
+  an in-process SQL OLAP database management system.
 - The `r pkg("bigrquery")` package provides the interface
   to [Google BigQuery](https://developers.google.com/bigquery/),
   Google's fully managed, petabyte scale, low cost analytics data
@@ -134,7 +136,8 @@ databases within R.
 - The `r pkg("Hmisc")` provides a wrapper function `Hmisc::mdb.get()`
   that uses the [mdbtools](https://github.com/mdbtools/mdbtools) utility
   to read from Microsoft Access database on Unix-alike systems.
-
+- The `r pkg("DatabaseConnector")` provides a DBI compatible interface 
+  to various database platforms using either JDBC or DBI drivers.
 
 ### Non-relational databases
 
@@ -164,9 +167,11 @@ databases within R.
 - The `r pkg("R4CouchDB")` package provides a collection
   of functions for basic database and document management operations
   in [CouchDB](http://couchdb.apache.org/).
-- The `r github("cloudyr/aws.dynamodb")` package on GitHub
-  provides access to [Amazon
-  DynamoDB](https://aws.amazon.com/dynamodb/).
+- Packages for [Amazon
+  DynamoDB](https://aws.amazon.com/dynamodb/), a fast, flexible NoSQL database
+  - The `r github("cloudyr/aws.dynamodb")` package on GitHub provides access to inside from 
+    the `cloudyr` development team.
+  - The `r pkg("paws.database")` package provides an interface using the `r pkg("paws")` suite of tools.
 - The `r github("mrcsparker/rrocksdb")` package on GitHub
   provides access to [RocksDB](http://rocksdb.org).
 
