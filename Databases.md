@@ -3,7 +3,7 @@ name: Databases
 topic: Databases with R
 maintainer: Yuan Tang, James Joseph Balamuta
 email: terrytangyuan@gmail.com
-version: 2022-08-24
+version: 2023-02-23
 source: https://github.com/cran-task-views/Databases/
 ---
 
