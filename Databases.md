@@ -218,6 +218,9 @@ testing with databases, database table manipulations, etc.
   handling of SQL databases.
 - The `r pkg("SQRL")` package streamlines exploratory and interactive sessions
   on ODBC databases, and allows R code within SQL scripts.
+- The `r pkg("octopus")` package provides an interactive shiny application for 
+  database management to view tables and schemas, upload files, send queries,
+  and more. 
 
 
 ### Links
