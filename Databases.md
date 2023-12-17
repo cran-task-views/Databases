@@ -27,7 +27,7 @@ became dominant in the 1980s. The data in relational databases is modeled as
 rows and columns in a series of tables with the use of
 [SQL](https://en.wikipedia.org/wiki/SQL) to express the logic for
 writing and querying data. The tables are relational, e.g. you have a
-user who users your softwares and those softwares have creators and
+user who uses your softwares and those softwares have creators and
 contributors. Non-relational databases became popular in recent years
 due to huge demand in storing unstructured data with the use of
 [NoSQL](https://en.wikipedia.org/wiki/NoSQL) as the query language.
