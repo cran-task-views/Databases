@@ -81,9 +81,7 @@ databases within R.
     an open-source parallel database on top of PostgreSQL.
 - The `r pkg("ROracle")` package is a DBI-compliant
   [Oracle database](https://www.oracle.com/database/) driver
-  based on the OCI. The `r pkg("ora")` package provides
-  convenience functions to query and browse a database through the
-  `r pkg("ROracle")` connection.
+  based on the OCI. 
 - Packages for [SQLite](http://www.sqlite.org/), a self-contained,
   high-reliability, embedded, full-featured, public-domain, SQL
   database engine:
