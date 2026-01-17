@@ -3,7 +3,7 @@ name: Databases
 topic: Databases with R
 maintainer: Yuan Tang, James Joseph Balamuta
 email: terrytangyuan@gmail.com
-version: 2023-02-23
+version: 2026-01-17
 source: https://github.com/cran-task-views/Databases/
 ---
 
@@ -142,6 +142,13 @@ databases within R.
 This section includes packages that provides access to non-relational
 databases within R.
 
+- The `r pkg("nodbi")` package provides a common database interface for
+  creating, reading (querying and listing fields), updating and deleting
+  of individual or many JSON documents in 
+  [SQLite](http://www.sqlite.org/), [PostgreSQL](https://www.postgresql.org/),
+  [DuckDb](https://duckdb.org/), [MongoDB](https://www.mongodb.com/),
+  [CouchDB](http://couchdb.apache.org/) and
+  [Elasticsearch](http://elasticsearch.org/)
 - Packages for [Redis](https://redis.io/), an open-source, in-memory
   data structure store that can be used as a database, cache and
   message broker:
