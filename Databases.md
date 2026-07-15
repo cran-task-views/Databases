@@ -204,6 +204,10 @@ testing with databases, database table manipulations, etc.
   frames. Basic features works with any database that has a DBI
   back-end; more advanced features require SQL translation to be
   provided by the package author.
+- The `r pkg("duckplyr")` package is similar to `r pkg("dbplyr")`,
+  but specific to DuckDB.
+  If a computation is not supported by DuckDB,
+  duckplyr will automatically fall back to dplyr.
 - The `r pkg("sqldf")` package provides functionalities to
   manipulate R Data Frames Using SQL.
 - The `r pkg("pointblank")` package provides tools to
