@@ -173,9 +173,6 @@ databases within R.
   - The `r pkg("mdbplyr")` package provides a lazy, `dplyr`-like interface 
     to a MongoDB database, using `mongolite` as client but abstracting the 
     JSON-based MongoDB queries to a more R-friendly approach.
-- The `r pkg("R4CouchDB")` package provides a collection
-  of functions for basic database and document management operations
-  in [CouchDB](http://couchdb.apache.org/).
 - Packages for [Amazon
   DynamoDB](https://aws.amazon.com/dynamodb/), a fast, flexible NoSQL database
   - The `r github("cloudyr/aws.dynamodb")` package on GitHub provides access to inside from 
