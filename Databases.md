@@ -3,7 +3,7 @@ name: Databases
 topic: Databases with R
 maintainer: Yuan Tang, James Joseph Balamuta
 email: terrytangyuan@gmail.com
-version: 2026-01-17
+version: 2026-09-22
 source: https://github.com/cran-task-views/Databases/
 ---
 
@@ -131,6 +131,12 @@ databases within R.
   `r pkg("dplyr")` interface to [Apache
   Spark](https://spark.apache.org/) DataFrames as well as an R
   interface to Spark's distributed machine learning pipelines.
+- The `r pkg("icebergr")` package provides a native R client for
+  [Apache Iceberg](https://iceberg.apache.org/), the open table format
+  used by Snowflake, Databricks, BigQuery, AWS and Dremio. It connects
+  to REST and AWS Glue catalogs, reads table schemas and partition
+  specifications, scans data with predicates and projections pushed
+  down, appends new data, and reads snapshot history for time travel.
 - The `r pkg("Hmisc")` provides a wrapper function `Hmisc::mdb.get()`
   that uses the [mdbtools](https://github.com/mdbtools/mdbtools) utility
   to read from Microsoft Access database on Unix-alike systems.
